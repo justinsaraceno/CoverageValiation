@@ -7,6 +7,7 @@ using CoverageValidation.Rules.ExistRules;
 
 namespace CoverageValidation.Rules
 {
+    [RuleAttribute]
     public class CoverageAIsCarriedAndCoverageBIsCarriedAndCoverageAIsGreaterThanCoverageB : RuleBase
     {
         private CoverageIsCarried CoverageAIsCarried;

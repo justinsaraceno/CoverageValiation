@@ -7,7 +7,8 @@ using CoverageValidation.Rules.ExistRules;
 
 namespace CoverageValidation.Rules
 {
-    public class Coverage007  : RuleBase
+    [RuleAttribute]
+    public class Coverage007 : RuleBase
     {
         private RuleBase NoneAreCarried;
         private RuleBase TOWIsCarried;
@@ -15,7 +16,7 @@ namespace CoverageValidation.Rules
 
         public Coverage007()
         {
-            NoneAreCarried = new NoneAreCarried().AddCoverage("BI","PD","COMP","Coll");
+            NoneAreCarried = new NoneAreCarried().AddCoverage("BI", "PD", "COMP", "Coll");
             TOWIsCarried = new CoverageIsCarried().SetCoverage("TOW");
             ERSIsCarried = new CoverageIsNotCarried().SetCoverage("UMBI+Stacked");
 
@@ -27,7 +28,7 @@ namespace CoverageValidation.Rules
         }
         public override RuleBase Execute()
         {
-            IsValid = NoneAreCarried.Execute().IsValid && TOWIsCarried.Execute().IsValid &&  ERSIsCarried.Execute().IsValid;
+            IsValid = NoneAreCarried.Execute().IsValid && TOWIsCarried.Execute().IsValid && ERSIsCarried.Execute().IsValid;
 
             if (!IsValid)
                 Message = String.Format("{0} and {1} and {2}", NoneAreCarried, TOWIsCarried,

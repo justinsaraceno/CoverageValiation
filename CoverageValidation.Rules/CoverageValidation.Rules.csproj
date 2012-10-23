@@ -52,6 +52,7 @@
     <Compile Include="ExistRules\ExistRuleBase.cs" />
     <Compile Include="ExistRules\IfCoverageAExistsThenCcverageBMustExist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleAttribute.cs" />
     <Compile Include="RuleBase.cs" />
     <Compile Include="RuleFactory.cs" />
     <Compile Include="VehicleRules\Coverage045.cs" />
