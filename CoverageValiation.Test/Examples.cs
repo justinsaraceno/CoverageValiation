@@ -37,8 +37,6 @@ namespace CoverageValiation.Test
             //Start with CompanyCode
 
 
-
-
             //  2) 
             // Determine the construction method using reflection. We dosn't want to have list out each rule. Use an attribute or namespace and create automatically.
 
@@ -46,7 +44,9 @@ namespace CoverageValiation.Test
             // Show how this will work in a multi thread environment. 
             // All the rules should be singleton. Exist in memory at all times.
             // then Filter them based on big six and that has to be threadsafe.
-            // then the individual executable rule must be separated from the rule definitino. 
+            // then the individual executable rule must be separated from the rule definition.
+
+            // 4) Clean Design Document.
 
         }
 
