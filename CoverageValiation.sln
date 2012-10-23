@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageValiation.Test", "CoverageValiation.Test\CoverageValiation.Test.csproj", "{8470920B-FA8A-4A05-A56C-0C82A3D0DFEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5CFD66DD-5B52-401B-9A5F-66AAAC69A5FF}"
+	ProjectSection(SolutionItems) = preProject
+		CoverageValiation.vsmdi = CoverageValiation.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageValidation.Model", "CoverageValidation.Model\CoverageValidation.Model.csproj", "{8197E3A9-5137-4235-AAEC-7B4F9D9FE9F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageValidation.Rules", "CoverageValidation.Rules\CoverageValidation.Rules.csproj", "{EC865340-8A36-4FFC-97AA-C4B82EFE5C1C}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "CoverageValidation.Design", "CoverageValidation.Design\CoverageValidation.Design.modelproj", "{593727D2-FBEC-4BAF-B827-029DABCF16E5}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CoverageValiation.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8470920B-FA8A-4A05-A56C-0C82A3D0DFEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8470920B-FA8A-4A05-A56C-0C82A3D0DFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8470920B-FA8A-4A05-A56C-0C82A3D0DFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8470920B-FA8A-4A05-A56C-0C82A3D0DFEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8197E3A9-5137-4235-AAEC-7B4F9D9FE9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8197E3A9-5137-4235-AAEC-7B4F9D9FE9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8197E3A9-5137-4235-AAEC-7B4F9D9FE9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8197E3A9-5137-4235-AAEC-7B4F9D9FE9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC865340-8A36-4FFC-97AA-C4B82EFE5C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC865340-8A36-4FFC-97AA-C4B82EFE5C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC865340-8A36-4FFC-97AA-C4B82EFE5C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC865340-8A36-4FFC-97AA-C4B82EFE5C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593727D2-FBEC-4BAF-B827-029DABCF16E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593727D2-FBEC-4BAF-B827-029DABCF16E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593727D2-FBEC-4BAF-B827-029DABCF16E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593727D2-FBEC-4BAF-B827-029DABCF16E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
