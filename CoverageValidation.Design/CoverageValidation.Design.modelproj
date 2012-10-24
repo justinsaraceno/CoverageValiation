@@ -23,10 +23,19 @@
     <Content Include="ModelDefinition\Package11_1506.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package1_0709.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package1_1506.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package2_0709.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package2_1506.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0709.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package3_1506.uml">
@@ -48,6 +57,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package9_1506.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0709.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_1506.uml">

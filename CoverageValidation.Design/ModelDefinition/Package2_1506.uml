@@ -17,5 +17,11 @@
         LastKnownName="Model"
         LastKnownLocation="Package3_1506.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0aac2d46-e4be-45e2-8770-9e6a52ce4f26"
+        LastKnownName="Rules"
+        LastKnownLocation="Package_0709.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

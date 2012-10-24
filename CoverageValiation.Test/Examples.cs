@@ -13,22 +13,6 @@ namespace CoverageValiation.Test
     [TestClass]
     public class Examples
     {
-        [TestMethod]
-        public void GetCoverageSet()
-        {
-            List<RuleBase> Rules = new List<RuleBase>();
-
-            var ruleFactory = new RuleFactory();
-
-            Rules.Add(ruleFactory.GetRuleCoverage1());
-            Rules.Add(ruleFactory.GetRuleCoverage2());
-            Rules.Add(new CoverageAIsCarriedAndCoverageBIsCarriedAndCoverageAIsGreaterThanCoverageB());
-            //  Rules.Add(ruleFactory.GetRuleCoverage045());
-            Rules.Add(new Coverage13());
-
-
-            Rules.ForEach(Console.WriteLine);
-
             // 1) 
             // Show filtering the rules for big six.
             //filter for state
@@ -47,7 +31,8 @@ namespace CoverageValiation.Test
 
             // 4) Clean Design Document.
 
-        }
+            //5) Rules must be versioned - Show how effective date will be handled. This is also called versioning
+
         [TestMethod]
         public void GetAllRules()
         {

@@ -1,0 +1,84 @@
+﻿1.1.1	Examples
+TODO GO through  all the rules. And produce examples. Fine cases that are hard to handle or impossible to handle. Remove all rules that we can handle. Prove how outliers can be handled.
+
+The vocabulary would be represented in a builder class.  There would be a factory class that uses the builder to build each rule.. As we find new rules we would build our vocabulary. Using reflection each rule will be built by hand. Then all the rules would be put into a collection for later filtering.
+Example Coverage.1
+Var rule = RuleBuilder.BI().IsCarried().And().PD().Is().Not().Carried();
+Or rolling this up a bit…
+Var rule = RuleBuilder.BIIsCarried().And().PDIsNotCarried();
+Using a generic function
+Var rule = RuleBuilder.IsCarried(“BI”).And().IsNotCarried(“PD”);
+
+
+Var rule = RuleBuilder.Coverage(“BI”).IsCarried().Coverage(“PD”).IsNotCarried();
+
+
+Var rule = RuleBuilder.Coverage(“BI”).IsCarried().Coverage(“PD”).IsNotCarried();
+Var rule = ruleBuilder.ThisIsCarriedAndThatIsNot("BI","PD").rule;
+
+I think we need to have the And() because we might need the Or(). Then we would need to deal with parenthesis.
+
+Once the vocab is built then making rules becomes trivial.
+Example Coverage.3
+Var rule = RuleBuilder.IsNoCarried(“BI”).And().IsNotCarried(@“SLBI/PD”).AnyOfAreCarried(“MED, UM, MUPD, MUPD,UMBIEC”);
+
+How do we handle Vehicle Types?  *This is also a different style of vocab.
+Example Coverage.2
+Var rule = RuleBuilder.ForVehicleTypesNotIN(“04”).Coverage(“BI”).IsNotCarried().And().Coverage(“PD”).IsCarried();
+
+How do we handle vehicle level verse policy level or rules that span both?
+How do we handle effective dates
+How do we handle “Or”?  NOT REALLY SURE?? Probable need to see how fluentvalidations does it and steel that.  Actually a lot of what they do can be stolen.
+Example Coverage.4
+RuleBuilder.Coverage(“CBRadio”).IsCarried().And().Coverage(“PD”).IsCarried();
+
+Example Coverage.5
+RuleBuilder.ForVehicleTypesIn(“01”,”02”,”03”).Coverage(“RR”).IsCarried().And().Coverage(“COMP”).IsNotCarried();
+
+Example Coverage.7  AGAIN how to handle OR.
+RuleBuilder.NoneAreCarried(“BI,PD,COMP,Coll”).And().Coverage(“TOW”).IsCarried.Or().Coverage(“ERS”).IsCarried();
+
+Example Coverage.45
+RuleBuilder.ForVehicleTypesNotIN(“21,25,26,27,28,29”).Coverage(“UMBI”).IsCarried().And().Coverage(“UMBI+Stacked”).IsNotCarried();
+
+
+
+Example Coverage.50 Showing greater than Ignoring Vehicles
+RuleBuilder.Coverage(“PD”).isCarried.And().Coverage(“UMPDNonStacked”).IsCarried.And().Coverage(“UMPDNonStacked”).IsGreaterThanCoverageLevelFor(“PD”);
+
+Steal From FluentValidations and use func<> to accommodate outliers. 
+RuleBuilder.Coverage(“PD”).IsCarried().And().Coverage(“UMPDNonStacked”).Must<CoverageRequest>(c => c.Property.IsEqualTo….)
+
+Example Coverage.104 Showing greater than a certain limit.  {unfinished}
+RuleBuilder.Coverage(“BI”).isCarried.And().Coverage(“UM-UND”).IsCarried.And().Coverage(“BI”).HasLimitLessThanOrEqualTo(“100/300”)
+
+Example Configuring Filtering. Rule doesn’t actually exist.
+Var rule = RuleBuilder.Coverage(“BI”).IsCarried().And().Coverage(“PD”).IsNotCarried().ForState;
+Var rule = RuleBuilder.Coverage(“BI”).IsCarried().And().Coverage(“PD”).IsNotCarried().ExcludeState;
+
+Var rule = RuleBuilder.Coverage(“BI”).IsCarried().And().Coverage(“PD”).IsNotCarried().ForCompany;
+Var rule = RuleBuilder.Coverage(“BI”).IsCarried().And().Coverage(“PD”).IsNotCarried().ExcludeCompanies;
+
+Or at the beginning
+
+Var rule = RuleBuilder.ForState(“OH”).Coverage(“BI”).IsCarried().And().Coverage(“PD”).IsNotCarried();
+Var rule = RuleBuilder
+.ExcludeStates(“HI”,”AL”)
+.Coverage(“BI”).IsCarried().And().Coverage(“PD”).IsNotCarried();
+
+RuleBuilder.ForState(“OH”).Coverage(“BI”).UseMnomonicNormilizing().IsCarried().And().Coverage(“PD”).IsNotCarried();
+
+Var rule = RuleBuilder
+.EffectiveFrom(“1/1/2007”, “1/2/2015”)
+.Coverage(“BI”).IsCarried().And().Coverage(“PD”).IsNotCarried()
+.WithRuleId(“Coverage.1”)
+.WithMessage(“Need to have this and that.”)
+
+
+
+CoverageValidationConfiguration.AddRule.EffectiveFrom(“1/1/2007”, “1/2/2015”)
+.Coverage(“BI”).IsCarried().And().Coverage(“PD”).IsNotCarried()
+.WithRuleId(“Coverage.1”)
+.WithMessage(“Need to have this and that.”)
+
+

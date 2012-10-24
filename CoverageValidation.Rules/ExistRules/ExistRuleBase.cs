@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using CoverageValidation.Model;
 
-namespace CoverageValidation.Rules
+namespace CoverageValidation.Rules.ExistRules
 {
     public abstract class ExistRuleBase : RuleBase
     {

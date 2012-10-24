@@ -29,7 +29,7 @@
         <referencesInternal>
           <reference
             Id="40f4a647-8900-476d-9d26-601eef2fbb9f"
-            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -223,7 +223,7 @@
             <referencesInternal>
               <reference
                 Id="f30eb04b-3b4e-4380-9246-6af49326fec5"
-                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest Member=PolicyCoverages"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest Member=PolicyCoverages"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -296,7 +296,7 @@
             <referencesInternal>
               <reference
                 Id="f54838cf-2f00-4c9a-a754-32ea68fb3bf1"
-                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest Member=VehicleFacts"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest Member=VehicleFacts"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -359,7 +359,7 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="b233a9e6-046b-4dde-980d-2a81ce916076"
+            Id="20a2f992-a123-4f45-9e27-45a439347a89"
             name="CoverageValidationRequest"
             isLeaf="false"
             isStatic="false"
@@ -368,47 +368,47 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="c12790b3-4f97-4f31-b859-352777e80ec4"
-                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest Member=.ctor"
+                Id="fc4374d9-38df-4219-bb4b-9c427df5912b"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageValidationRequest Member=.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="30e58950-a0d9-4ce8-aa03-caae80b10803"
+                Id="c1a2d623-49cc-4732-99be-3b4ef9adec0a"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="e5977b15-0ef1-48d3-ba07-935e0f73cce3">
+                    Id="2c48c4b8-615a-4c70-83db-99156b364a5f">
                     <propertyInstance
-                      Id="f440b524-b309-4c60-b795-a573d425b5be"
+                      Id="b7c0ac65-52d0-4448-9b6b-92cf73e74ada"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="9bbc5635-362b-4704-a3ed-bfc679a10832">
+                    Id="f9411453-30f1-4aba-90a5-4aeb50a2b0ed">
                     <propertyInstance
-                      Id="8d270f0f-559e-4559-b757-08ff64710c7c"
+                      Id="316b02e6-92b3-4b49-be3c-c6e8a95e2a59"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="35efb7e9-d0d9-4bbd-b2a4-51fade79c4ca">
+                    Id="77d65659-c6b5-4a63-b33e-cee4d199b118">
                     <propertyInstance
-                      Id="d76df0b8-c48a-4154-b425-356457ebb326"
+                      Id="08d7aeeb-172c-4b1b-ab2e-b4e98be4f81b"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="cabcf86f-cb4b-4fed-a294-7af442504ff0">
+                    Id="88b07282-ea0b-476e-b5db-ecf9a3702b85">
                     <propertyInstance
-                      Id="34332957-5856-477c-99cd-fb0de59b86ad"
+                      Id="881a1091-b613-4a4c-b8f9-f02dd871e529"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="ca0b4210-192a-4b56-8717-42e33bfcd326">
+                    Id="94171d11-fc39-41fa-9e65-3d1f2db0df81">
                     <propertyInstance
-                      Id="816c38bb-c829-4b38-97e9-6a7bb810dd99"
+                      Id="797171e7-8890-4505-bcc2-4c6a7758c9ce"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
@@ -429,7 +429,7 @@
         <referencesInternal>
           <reference
             Id="3d85598b-af9b-4846-81af-d8ff6963d772"
-            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -498,7 +498,7 @@
             <referencesInternal>
               <reference
                 Id="a14544a3-9ee0-4943-a405-bc42bd00a4a5"
-                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=CoverageMnemonic"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=CoverageMnemonic"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -571,7 +571,7 @@
             <referencesInternal>
               <reference
                 Id="f7bbbbc3-fcd2-4e9d-a6da-0b0f629e6edc"
-                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=DeductibleMnemonic"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=DeductibleMnemonic"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -644,7 +644,7 @@
             <referencesInternal>
               <reference
                 Id="fb8477fa-15f7-4706-bdc9-8f34a0d1ddbb"
-                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=LimitMnemonic"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=LimitMnemonic"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -704,6 +704,79 @@
                 LastKnownLocation="CoverageValidation.Design.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="805cc063-a4e6-4321-b4b8-4386b46c4a52"
+            name="IsCarried"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="be6581e8-4980-40bd-8d28-8484a5abd177"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=IsCarried"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="35bf674d-dc62-461b-aca3-9ae3650f6112"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77e232af-97b6-40e8-9fbe-a590cadb4267">
+                    <propertyInstance
+                      Id="f8c68b99-f302-4764-b3c3-93ce764b848b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ecc5e08-2af1-43ba-996b-0384e77fb82a">
+                    <propertyInstance
+                      Id="6d45422a-46f3-4f20-9459-43da08f2fb27"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea5726ea-62f9-451d-839f-d1b668993c3f">
+                    <propertyInstance
+                      Id="419b22eb-8fd5-4cae-9d68-b431798f25a9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b007dbb7-53b5-480d-82a9-f4a0b789dc2b">
+                    <propertyInstance
+                      Id="5a3f8bcc-337c-4658-8393-90508b38fb9e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96fac6df-01e4-4ac9-93d0-0a0f6410f646">
+                    <propertyInstance
+                      Id="bf1d471c-ea48-4f71-bd5c-7c335a79efb9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f57995b-9d60-40a4-86d5-d130c10c452c">
+                    <propertyInstance
+                      Id="42581aee-c44c-4af4-bf50-9dfcc831d8bf"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="CoverageValidation.Design.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -717,7 +790,7 @@
             <referencesInternal>
               <reference
                 Id="21ecd598-31b0-4c38-9b43-9b0dd96a799c"
-                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=(Name=CompareTo OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object)])"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=(Name=CompareTo OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object)])"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -784,7 +857,7 @@
                   <referencesInternal>
                     <reference
                       Id="78985570-8afc-4d31-9a90-71405973b8b0"
-                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=(Name=CompareTo OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object)]) ParameterIdentifier=obj"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=(Name=CompareTo OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object)]) ParameterIdentifier=obj"
                       tag="ViewCode" />
                   </referencesInternal>
                   <type_NamedElement>
@@ -798,7 +871,7 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="b89c1f96-3871-4069-8161-2ab95b4c6e3b"
+            Id="d982c5e6-58ad-42b6-b2da-bbf601891ee2"
             name="CoverageLevelFact"
             isLeaf="false"
             isStatic="false"
@@ -807,47 +880,47 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="6c21c7be-2356-44c7-b754-1cbb49c3fe46"
-                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=.ctor"
+                Id="4eb74e18-c245-43e1-a90a-5edb5a356173"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=CoverageLevelFact Member=.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="83542201-6ba3-4171-b7dc-a393f40cca37"
+                Id="7b14dad0-3af6-40e6-801d-332cdace36ef"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="a70e22cd-bf83-4b06-b10b-49b86453c2d6">
+                    Id="b5884dc5-c335-4468-80a9-f31807d1b53e">
                     <propertyInstance
-                      Id="77c27dfb-b749-4bc8-84fc-16435b0d3894"
+                      Id="2fca42d9-04c6-4236-b42a-c23a8a8f2e37"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="ae6c6bc1-04e5-4bed-ac4f-97991fcb86ad">
+                    Id="b9391667-aff9-4dcc-be22-10ed98479fcc">
                     <propertyInstance
-                      Id="9818de18-6ab4-46c1-b853-8ee2d7a05e7c"
+                      Id="71084f0d-81f1-4d15-8aa9-e9a220b5234e"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="63ffb19a-e594-4307-a30d-a987fc19370d">
+                    Id="49ab0ee3-d32a-4494-8ff9-1e1e5bee2b23">
                     <propertyInstance
-                      Id="d802188d-66cd-4308-bff0-caccca4a9a0d"
+                      Id="4858baf9-c5bb-4890-8c68-d04c9656b986"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="334db4ab-2f36-4b8c-a411-21528280fcce">
+                    Id="d005cc64-6d60-415e-9881-99ab66fc01a4">
                     <propertyInstance
-                      Id="f501bdfb-443d-47c7-943d-2a8b16408668"
+                      Id="304f9035-8e44-49bb-ac2e-18b1b993cae5"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="ded93fff-3397-4c47-8796-c0ac61841f38">
+                    Id="0e600767-67c3-4c61-a06c-bea2dd582ee8">
                     <propertyInstance
-                      Id="fbe37222-4e07-4eec-98ca-9091a8f63f58"
+                      Id="fd3e031a-8327-44e9-8faf-96e3c9c24f80"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
@@ -868,7 +941,7 @@
         <referencesInternal>
           <reference
             Id="2e45d6af-ac13-4621-ac1d-7eea32294226"
-            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=VehicleFact"
+            handle="viewcode://./CodeSchema_Class?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=VehicleFact"
             tag="ViewCode" />
         </referencesInternal>
         <appliedStereotypesInternal>
@@ -996,7 +1069,7 @@
             <referencesInternal>
               <reference
                 Id="06c8fcc2-b29c-462e-b1b5-55d04153bb9e"
-                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=VehicleFact Member=Coverages"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=VehicleFact Member=Coverages"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1069,7 +1142,7 @@
             <referencesInternal>
               <reference
                 Id="8e6ed6ba-a0c8-4f4d-b8a3-36cdfaad7b00"
-                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=VehicleFact Member=VehicleId"
+                handle="viewcode://./CodeSchema_Property?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=VehicleFact Member=VehicleId"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
@@ -1132,7 +1205,7 @@
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="db520c3d-e067-43f5-9328-cc20443be0ec"
+            Id="e00be90d-1494-44fd-bd90-cfc9f6c5dfc2"
             name="VehicleFact"
             isLeaf="false"
             isStatic="false"
@@ -1141,47 +1214,47 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="5ec628cd-d256-4016-baa2-950e239ff230"
-                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///c:/users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=VehicleFact Member=.ctor"
+                Id="903bd675-c806-45c2-a2a6-3fd3614eee1a"
+                handle="viewcode://./CodeSchema_Method?Assembly=&quot;file:///C:/Users/steven.suing/documents/visual studio 2010/Projects/CoverageValiation/CoverageValidation.Model/bin/Debug/CoverageValidation.Model.dll&quot; Namespace=CoverageValidation.Model Type=VehicleFact Member=.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="f84a24b2-1877-46d1-968c-910a652c1c51"
+                Id="037f2702-7dfb-4bcb-8bc1-cd4e3fbde33d"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="416f42cf-cdd2-4304-9c3a-4ce2fc177232">
+                    Id="477e4414-a071-46a3-9ef9-01d26238bfae">
                     <propertyInstance
-                      Id="de0744d3-48b9-431d-a982-2e79c0fce043"
+                      Id="f17c85a3-bb7a-4b6a-bdd7-a005a3e29945"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="ba92a8f0-840d-4db0-a107-39894da3b508">
+                    Id="fbb8192c-acb8-4774-886e-29110c89b0d5">
                     <propertyInstance
-                      Id="1b01ea18-ea39-4294-8933-28f77d4949f8"
+                      Id="fd395faf-dedd-475b-9832-8c4ceedd8751"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="efd809fa-0451-4a65-88dd-42784d5933c3">
+                    Id="ce69e819-9fec-493b-a1c7-10c1bfc01ff1">
                     <propertyInstance
-                      Id="60671be1-8f1d-4749-af73-421f614088ac"
+                      Id="974e8dff-49f8-44cd-885a-d1cdb7aad9a9"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="b96d56df-31f3-47aa-82f6-dde87d496d84">
+                    Id="55cc949b-6d7c-4f09-8a0e-e6a07cf8f37e">
                     <propertyInstance
-                      Id="97cf61df-24ca-4dd2-94eb-796d3bac3c42"
+                      Id="ed60b0ad-5507-4d08-a8eb-2c7a863a51b9"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="b625fd28-f930-460b-acec-370bbcdcd041">
+                    Id="b25d047a-8b45-482b-8bda-b5f4ee8bc3d9">
                     <propertyInstance
-                      Id="5c7b9827-8ca2-43f0-af68-00f04296f833"
+                      Id="3d4d1abc-25ad-4cf1-a12c-8b1611a7fc52"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
