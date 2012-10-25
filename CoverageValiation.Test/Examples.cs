@@ -25,13 +25,20 @@ namespace CoverageValiation.Test
 
             // 3) 
             // Show how this will work in a multi thread environment. 
-            // All the rules should be singleton. Exist in memory at all times.
             // then Filter them based on big six and that has to be threadsafe.
             // then the individual executable rule must be separated from the rule definition.
 
-            // 4) Clean Design Document.
+            //4) Clean Design Document.
 
             //5) Rules must be versioned - Show how effective date will be handled. This is also called versioning
+
+            //6) Make sure unlimited company is accounted.
+
+        //7) What is the developer lookinga 
+
+        //Need to look at Coverages Model to see how to use it
+
+
 
         [TestMethod]
         public void GetAllRules()
@@ -66,9 +73,12 @@ namespace CoverageValiation.Test
         public void GetAllRulesFromFactory()
         {
             var Rules = RuleFactory.GetAllRules();
-
             Rules.ForEach(Console.WriteLine);
 
+            foreach (var ruleBase in Rules)
+            {
+                Rules.ForEach(Console.WriteLine);
+            }
         }
 
         [TestMethod]

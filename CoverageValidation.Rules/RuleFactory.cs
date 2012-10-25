@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using CoverageValidation.Rules.CompareRules;
+using CoverageValidation.Rules.CompoundRules;
 using CoverageValidation.Rules.ExistRules;
 using CoverageValidation.Rules.VehicleRules;
 
@@ -15,8 +16,8 @@ namespace CoverageValidation.Rules
         public RuleBase GetRuleCoverage1()
         {
             return new IfCoverageAExistsThenCcverageBMustExist()
-                .SetCoverageA("BI")
-                .SetCoverageB("PD")
+                .SetMnemonicForCoverageA("BI")
+                .SetMnemonicForCoverageB("PD")
                 .ExcludeStates("OH", "AK");
         }
 
@@ -27,6 +28,12 @@ namespace CoverageValidation.Rules
                 .SetCoverageA("BI")
                 .SetCoverageB("PD")
                 .ExcludeStates("OH", "AK");
+        }
+
+        [RuleAttribute]
+        public RuleBase GetThisNewRule()
+        {
+            return new CoverageAIsCarriedAndCoverageBIsCarriedAndCoverageAIsGreaterThanCoverageB();
         }
 
         [RuleAttribute]

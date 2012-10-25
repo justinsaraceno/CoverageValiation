@@ -22,13 +22,13 @@ namespace CoverageValidation.Rules.ExistRules
             return this;
         }
 
-        public ExistRuleBase SetCoverageA(string coverageAMnemonic)
+        public ExistRuleBase SetMnemonicForCoverageA(string coverageAMnemonic)
         {
             CoverageAMnemonic = coverageAMnemonic;
             return this;
         }
 
-        public ExistRuleBase SetCoverageB(string coverageAMnemonic)
+        public ExistRuleBase SetMnemonicForCoverageB(string coverageAMnemonic)
         {
             CoverageBMnemonic = coverageAMnemonic;
             return this;
