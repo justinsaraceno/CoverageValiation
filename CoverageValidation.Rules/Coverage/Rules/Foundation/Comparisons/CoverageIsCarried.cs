@@ -21,7 +21,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
         }
         public override string ToString()
         {
-            throw new NotImplementedException();
+            return string.Format("Coverage {0} is carried.", Mnemonic);
         }
 
         private CoverageLevelFact GetCoverage(List<Model.CoverageLevelFact> a, string b)

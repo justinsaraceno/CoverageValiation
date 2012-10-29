@@ -7,24 +7,36 @@ using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation
 {
-    public class VehicleTwoCoverageRule : VehicleRuleBase
+    public class VehicleTwoCoverageRuleBase : VehicleRuleBase
     {
         private CompareTwoCoveragesBase comparer;
 
         //This is probable some object with more data in it. 
         protected List<string> Messages = new List<string>();
 
-        protected VehicleTwoCoverageRule(CompareTwoCoveragesBase comparer)
+        protected VehicleTwoCoverageRuleBase(CompareTwoCoveragesBase comparer)
         {
             this.comparer = comparer;
         }
 
-        protected override bool If(CoverageValidationRequest fact)
-        {
-            if (!base.RuleApplies(fact)) return false;
 
-            var IsValid = false;
-            foreach (var vehicleFact in fact.VehicleFacts)
+        protected override void Then(CoverageRulesContainer fact)
+        {
+            //Take the messages and move them to the result object using the comparer again
+            foreach (var message in Messages)
+            {
+                
+            }
+        }
+        public override string ToString()
+        {
+            return comparer.ToString();
+        }
+
+        public override bool Evaluate(CoverageRulesContainer fact)
+        {
+            var ruleIsTrue = false;
+            foreach (var vehicleFact in fact.Request.VehicleFacts)
             {
                 if (!base.RuleApplies(fact)) continue;
 
@@ -34,25 +46,13 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation
 
                 if (!comparer.Comparer()(coverageA, coverageB))
                 {
-                   //Add to the message list or some kind of object to store to eventually add to the result.
+                    //Add to the message list or some kind of object to store to eventually add to the result.
+                    ruleIsTrue = true;
                     Messages.Add("There is an issue");
                 }
             }
 
-            return IsValid;
+            return ruleIsTrue;
         }
-
-        protected override void Then(CoverageValidationRequest fact)
-        {
-            //Take the messages and move them to the result object using the comparer again
-            foreach (var message in Messages)
-            {
-                
-            }
-            
-            
-
-        }
-
     }
 }

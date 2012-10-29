@@ -7,28 +7,25 @@ using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation
 {
-    public class TwoCoverageRule : CoverageRuleBase
+    public class TwoCoverageRuleBase : CoverageRuleBase
     {
         private readonly CompareTwoCoveragesBase comparer;
 
-        protected TwoCoverageRule(CompareTwoCoveragesBase comparer)
+        protected TwoCoverageRuleBase(CompareTwoCoveragesBase comparer)
         {
             this.comparer = comparer;
         }
 
-        protected override bool If(CoverageValidationRequest fact)
+        public override bool Evaluate(CoverageRulesContainer fact)
         {
             var coverageA = GetCoverage(fact, comparer.CoverageAMnemonic);
             var coverageB = GetCoverage(fact, comparer.CoverageBMnemonic);
 
             return comparer.Comparer()(coverageA, coverageB);
         }
-
-        protected override void Then(CoverageValidationRequest fact)
+        public override string ToString()
         {
-            //Add this to the message list that will be in the response object
-            comparer.ToString();
+            return comparer.ToString();
         }
-
     }
 }

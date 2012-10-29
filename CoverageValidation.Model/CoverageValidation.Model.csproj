@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Geico.Applications.Foundation.Rules">
-      <HintPath>..\packages\Applications.Foundation.BusinessRules.1.1.23-Alpha\lib\net40\Geico.Applications.Foundation.Rules.dll</HintPath>
-    </Reference>
     <Reference Include="StructureMap">
       <HintPath>..\packages\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
     </Reference>

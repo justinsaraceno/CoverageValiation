@@ -5,12 +5,43 @@ using System.Text;
 
 namespace CoverageValidation.Model
 {
+
+    public class CoverageRulesContainer
+    {
+        public CoverageValidationRequest Request;
+        public CoverageValidationResponse Response;
+
+        public CoverageRulesContainer(CoverageValidationRequest request, CoverageValidationResponse response)
+        {
+            this.Request = request;
+            this.Response = response;
+        }
+    }
+
+
     public class CoverageValidationRequest
     {
-        public List<VehicleFact> VehicleFacts { get; set;  }
+        public List<VehicleFact> VehicleFacts { get; set; }
         public List<CoverageLevelFact> PolicyCoverages { get; set; }
         public string RiskState { get; set; }
     }
+
+    public class CoverageValidationResponse
+    {
+        public List<Message> Messages { get; set; }
+
+        public CoverageValidationResponse()
+        {
+            Messages = new List<Message>();
+        }
+    }
+
+    public class Message
+    {
+        public string MessageId { get; set; }
+        public string Description { get; set; }
+    }
+
 
     public class VehicleFact
     {

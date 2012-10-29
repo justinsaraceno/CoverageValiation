@@ -37,7 +37,7 @@ namespace CoverageValidation.Rules.ExistRules
             //TODO Add the list of coverages. 
         }
 
-        public override RuleBase Build(CoverageValidationRequest request)
+        public override RuleBase Build(CoverageRulesContainer request)
         {
             rules = new List<RuleBase>();
             foreach (var coverageMnemonic in coverageMnemonics)

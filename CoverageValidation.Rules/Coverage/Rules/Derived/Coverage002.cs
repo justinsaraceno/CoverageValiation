@@ -5,7 +5,7 @@ using Geico.Applications.Foundation.Rules;
 namespace CoverageValidation.Rules.Coverage.Rules.Derived
 {
     [Rule("Coverage002")]
-    public class Coverage002 : VehicleTwoCoverageRule
+    public class Coverage002 : VehicleTwoCoverageRuleBase
     {
         public Coverage002()
             : base(new CoverageAIsCarriedAndCoverageBIsNotCarried("PD","BI"))

@@ -31,13 +31,13 @@ namespace CoverageValidation.Rules
 
         public abstract RuleBase Execute();
 
-        public abstract RuleBase Build(CoverageValidationRequest request);
+        public abstract RuleBase Build(CoverageRulesContainer request);
 
-        protected CoverageLevelFact GetCoverage(CoverageValidationRequest request, string mnemonic)
+        protected CoverageLevelFact GetCoverage(CoverageRulesContainer request, string mnemonic)
         {
             //This is where the work really comes in.  At this point we have just the metadata for the rule.
             //The effort here is to get the Coverage and the selected value and all the quirkds associated with taht.
-            return request.PolicyCoverages.First(c => c.CoverageMnemonic == mnemonic);
+            return request.Request.PolicyCoverages.First(c => c.CoverageMnemonic == mnemonic);
         }
     }
 }

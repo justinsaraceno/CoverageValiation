@@ -17,7 +17,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
         }
         public override string ToString()
         {
-            throw new NotImplementedException();
+            return "this is the two string of AnyAreCarried Comparer";
         }
 
         private object GetCoverage(List<Model.CoverageLevelFact> a, string b)

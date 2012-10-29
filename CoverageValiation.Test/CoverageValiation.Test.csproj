@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Geico.Applications.Foundation.Rules">
-      <HintPath>..\packages\Applications.Foundation.BusinessRules.1.1.23-Alpha\lib\net40\Geico.Applications.Foundation.Rules.dll</HintPath>
+    <Reference Include="Geico.Applications.Foundation.Rules, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\..\TFS\MSI\Dev\vNext\Applications\Foundation\Rules\src\Rules\bin\Debug\Geico.Applications.Foundation.Rules.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -59,6 +59,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExamplesUsingRulesEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Examples.cs" />
   </ItemGroup>

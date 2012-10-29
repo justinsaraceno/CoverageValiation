@@ -11,14 +11,16 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
         private readonly CoverageIsCarried COMP = new CoverageIsCarried("COMP");
         private readonly CoverageIsCarried COMB = new CoverageIsCarried("COLL");
 
-        protected override bool If(Model.CoverageValidationRequest fact)
+        protected override void Then(Model.CoverageRulesContainer fact)
         {
-           if  (!base.RuleApplies(fact))
-            return false;
+            throw new System.NotImplementedException();
+        }
 
-            var CB_Radio_Car_Phone_coverage_is_carried = CB.Comparer()(fact.PolicyCoverages);
-            var ComprehensiveIsNotCarried = !COMP.Comparer()(fact.PolicyCoverages);
-            var Combined_AdditionalIsNotCarried = !COMB.Comparer()(fact.PolicyCoverages);
+        public override bool Evaluate(Model.CoverageRulesContainer fact)
+        {
+            var CB_Radio_Car_Phone_coverage_is_carried = CB.Comparer()(fact.Request.PolicyCoverages);
+            var ComprehensiveIsNotCarried = !COMP.Comparer()(fact.Request.PolicyCoverages);
+            var Combined_AdditionalIsNotCarried = !COMB.Comparer()(fact.Request.PolicyCoverages);
 
             if (CB_Radio_Car_Phone_coverage_is_carried && (ComprehensiveIsNotCarried || Combined_AdditionalIsNotCarried))
             {
@@ -27,9 +29,11 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
             return false;
         }
 
-        protected override void Then(Model.CoverageValidationRequest fact)
+
+        public override string ToString()
         {
-            throw new System.NotImplementedException();
+            return string.Format("{0} {1} {2}", CB, COMP, COMB);
         }
+
     }
 }

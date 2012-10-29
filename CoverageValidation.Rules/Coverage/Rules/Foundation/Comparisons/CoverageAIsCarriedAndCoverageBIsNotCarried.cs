@@ -17,7 +17,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 
         public override Func<CoverageLevelFact, CoverageLevelFact, bool> Comparer()
         {
-            return (a, b) => a.IsCarried || !b.IsCarried;
+            return (a, b) => a.IsCarried && !b.IsCarried;
         }
     }
 }

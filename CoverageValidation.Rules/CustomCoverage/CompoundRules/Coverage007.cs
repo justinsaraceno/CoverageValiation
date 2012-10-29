@@ -26,7 +26,7 @@ namespace CoverageValidation.Rules.CompoundRules
             return this;
         }
 
-        public override RuleBase Build(Model.CoverageValidationRequest request){
+        public override RuleBase Build(Model.CoverageRulesContainer request){
             NoneAreCarried.Build(request);
             TOWIsCarried.Build(request);
             ERSIsCarried.Build(request);

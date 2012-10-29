@@ -15,17 +15,21 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
             ExcludedStates.AddRange(new[] { "NJ"});
             //Would need Basic Contract include
         }
-
-        protected override bool If(Model.CoverageValidationRequest fact)
+        
+        //Will need some way to remember what happens from the Evaluate to the Then
+        //Most likely the evaluate will set up the return message. 
+        protected override void Then(Model.CoverageRulesContainer fact)
         {
-           if  (!base.RuleApplies(fact))
-            return false;
+            throw new System.NotImplementedException();
+        }
 
+        public override bool Evaluate(Model.CoverageRulesContainer fact)
+        {
             var coverageA = GetCoverage(fact, BINOtCarriedAndCOLIsNotCared.CoverageAMnemonic);
             var coverageB = GetCoverage(fact, BINOtCarriedAndCOLIsNotCared.CoverageBMnemonic);
             var bINOtCarriedAndCOLIsNotCared = BINOtCarriedAndCOLIsNotCared.Comparer()(coverageA, coverageB);
 
-            var anyOfTHeFollowingAreCarried = AnyOfTHeFollowingAreCarried.Comparer()(fact.PolicyCoverages);
+            var anyOfTHeFollowingAreCarried = AnyOfTHeFollowingAreCarried.Comparer()(fact.Request.PolicyCoverages);
 
             if (bINOtCarriedAndCOLIsNotCared && anyOfTHeFollowingAreCarried)
             {
@@ -34,9 +38,9 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
             return false;
         }
 
-        protected override void Then(Model.CoverageValidationRequest fact)
+        public override string ToString()
         {
-            throw new System.NotImplementedException();
+            return string.Format("{0} {1}", BINOtCarriedAndCOLIsNotCared, AnyOfTHeFollowingAreCarried);
         }
     }
 }

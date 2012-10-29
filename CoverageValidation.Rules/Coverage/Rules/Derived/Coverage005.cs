@@ -15,24 +15,21 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
             IncludedVehicle.AddRange(new[] { "01", "05" });
         }
 
-        protected override bool If(Model.CoverageValidationRequest fact)
+        protected override void Then(Model.CoverageRulesContainer fact)
         {
-            if (!base.RuleApplies(fact))
-                return false;
+            throw new System.NotImplementedException();
+        }
 
-            var rRIsCarried = RR.Comparer()(fact.PolicyCoverages);
-            var comprehensiveIsNotCarried = !COMP.Comparer()(fact.PolicyCoverages);
+        public override bool Evaluate(Model.CoverageRulesContainer fact)
+        {
+            var rRIsCarried = RR.Comparer()(fact.Request.PolicyCoverages);
+            var comprehensiveIsNotCarried = !COMP.Comparer()(fact.Request.PolicyCoverages);
 
             if (rRIsCarried && comprehensiveIsNotCarried)
             {
                 return true;
             }
             return false;
-        }
-
-        protected override void Then(Model.CoverageValidationRequest fact)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

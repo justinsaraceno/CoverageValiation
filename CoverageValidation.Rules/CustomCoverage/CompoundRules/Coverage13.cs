@@ -40,7 +40,7 @@ namespace CoverageValidation.Rules.CompoundRules
         {
             return String.Format("{0} and {1} and ({2} or {3})", BIIsCarried, PDIsCarried, UMBIIsNotCarried, UMPDIsNotCarried);
         }
-        public override RuleBase Build(Model.CoverageValidationRequest request)
+        public override RuleBase Build(Model.CoverageRulesContainer request)
         {
             BIIsCarried.Build(request);
             PDIsCarried.Build(request);

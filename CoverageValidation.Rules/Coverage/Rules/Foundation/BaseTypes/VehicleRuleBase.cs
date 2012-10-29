@@ -18,5 +18,14 @@ namespace CoverageValidation.Rules.Coverage.Rules
             return (IncludedVehicle.Contains(fact.VehicleType) || !ExcludedVehicle.Contains(fact.VehicleType));
         }
 
+        protected override bool If(CoverageRulesContainer fact)
+        {
+            if (!this.RuleApplies(fact) || base.RuleApplies(fact)) 
+                return false;
+
+            return Evaluate(fact);
+        }
+
+
     }
 }

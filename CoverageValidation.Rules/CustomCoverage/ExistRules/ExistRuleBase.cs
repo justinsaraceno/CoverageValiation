@@ -34,7 +34,7 @@ namespace CoverageValidation.Rules.ExistRules
             return this;
         }
 
-        public override RuleBase Build(CoverageValidationRequest request)
+        public override RuleBase Build(CoverageRulesContainer request)
         {
             CoverageAFact = GetCoverage(request, CoverageAMnemonic);
             CoverageBFact = GetCoverage(request, CoverageBMnemonic);

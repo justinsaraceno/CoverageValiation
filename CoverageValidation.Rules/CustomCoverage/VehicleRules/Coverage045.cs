@@ -41,9 +41,9 @@ namespace CoverageValidation.Rules.VehicleRules
             return this;
         }
 
-        public override RuleBase Build(Model.CoverageValidationRequest request)
+        public override RuleBase Build(Model.CoverageRulesContainer request)
         {
-            foreach (var vehicle in request.VehicleFacts)
+            foreach (var vehicle in request.Request.VehicleFacts)
             {
                 rules.Add(new Tuple<VehicleFact, RuleBase, RuleBase>(vehicle, UMBIIsCarried.Build(request),UMBIStackedIsNotCarried.Build(request)));
             }

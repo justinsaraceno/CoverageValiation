@@ -33,7 +33,7 @@ namespace CoverageValidation.Rules.CompoundRules
         {
             return String.Format("{0} and {1} and {2}", CoverageAIsCarried, CoverageBIsCarried, CoverageAIsGreaterThanCoverageB);
         }
-        public override RuleBase Build(Model.CoverageValidationRequest request)
+        public override RuleBase Build(Model.CoverageRulesContainer request)
         {
             CoverageAIsCarried.Build(request);
             CoverageBIsCarried.Build(request);
