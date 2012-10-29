@@ -3,7 +3,7 @@ using CoverageValidation.Rules.ExistRules;
 
 namespace CoverageValidation.Rules.CompoundRules
 {
-    [RuleAttribute]
+    [CoverageRule]
     public class Coverage007 : RuleBase
     {
         private RuleBase NoneAreCarried;

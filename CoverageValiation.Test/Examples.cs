@@ -15,9 +15,9 @@ namespace CoverageValiation.Test
     {
             // 1) 
             // Show filtering the rules for big six.
-            //filter for state
-            //var RulesForOhio = Rules.Select(c=> c.IncludedState)
-            //Start with CompanyCode
+            // filter for state
+            // var RulesForOhio = Rules.Select(c=> c.IncludedState)
+            // Start with CompanyCode
 
 
             //  2) 
@@ -50,7 +50,7 @@ namespace CoverageValiation.Test
 
             foreach (var method in methods)
             {
-                var attributes = method.GetCustomAttributes(typeof(RuleAttribute), true);
+                var attributes = method.GetCustomAttributes(typeof(CoverageRuleAttribute), true);
                 if (attributes != null && attributes.Length > 0)
                 {
 
@@ -88,9 +88,9 @@ namespace CoverageValiation.Test
             var typesWithMyAttribute =
                 (from assembly in AppDomain.CurrentDomain.GetAssemblies()
                  from type in assembly.GetTypes()
-                 let attributes = type.GetCustomAttributes(typeof(RuleAttribute), true)
+                 let attributes = type.GetCustomAttributes(typeof(CoverageRuleAttribute), true)
                  where attributes != null && attributes.Length > 0
-                 select new { Type = type, Attributes = attributes.Cast<RuleAttribute>() })
+                 select new { Type = type, Attributes = attributes.Cast<CoverageRuleAttribute>() })
                   .ToList();
 
             var Rules = new List<RuleBase>();
@@ -110,13 +110,13 @@ namespace CoverageValiation.Test
             //(from assembly in AppDomain.CurrentDomain.GetAssemblies()
             // from type in assembly.GetTypes()
             // from method in type.GetMethods()
-            // let attributes = method.GetCustomAttributes(typeof(RuleAttribute), true)
+            // let attributes = method.GetCustomAttributes(typeof(CoverageRuleAttribute), true)
             // where attributes != null && attributes.Length > 0
             // select new
             // {
             //     Type = type,
             //     Method = method,
-            //     Attributes = attributes.Cast<RuleAttribute>()
+            //     Attributes = attributes.Cast<CoverageRuleAttribute>()
             // })
             //.ToList();
 

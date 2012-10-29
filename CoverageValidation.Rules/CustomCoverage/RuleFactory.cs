@@ -12,7 +12,7 @@ namespace CoverageValidation.Rules
 {
     public class RuleFactory
     {
-        [RuleAttribute]
+        [CoverageRule]
         public RuleBase GetRuleCoverage1()
         {
             return new IfCoverageAExistsThenCcverageBMustExist()
@@ -21,7 +21,7 @@ namespace CoverageValidation.Rules
                 .ExcludeStates("OH", "AK");
         }
 
-        [RuleAttribute]
+        [CoverageRule]
         public RuleBase GetRuleCoverage2()
         {
             return new CoverageMustBeGreaterThanCoverageB()
@@ -30,13 +30,13 @@ namespace CoverageValidation.Rules
                 .ExcludeStates("OH", "AK");
         }
 
-        [RuleAttribute]
+        [CoverageRule]
         public RuleBase GetThisNewRule()
         {
             return new CoverageAIsCarriedAndCoverageBIsCarriedAndCoverageAIsGreaterThanCoverageB();
         }
 
-        [RuleAttribute]
+        [CoverageRule]
         public static RuleBase GetRuleCoverage045()
         {
             return new Coverage045().ExcludeVehicle("21", "25", "26", "27", "28", "29");
@@ -60,7 +60,7 @@ namespace CoverageValidation.Rules
 
             foreach (var method in methods)
             {
-                var attributes = method.GetCustomAttributes(typeof(RuleAttribute), true);
+                var attributes = method.GetCustomAttributes(typeof(CoverageRuleAttribute), true);
                 if (attributes != null && attributes.Length > 0)
                 {
 
@@ -78,9 +78,9 @@ namespace CoverageValidation.Rules
             var typesWithMyAttribute =
              (from assembly in AppDomain.CurrentDomain.GetAssemblies()
               from type in assembly.GetTypes()
-              let attributes = type.GetCustomAttributes(typeof(RuleAttribute), true)
+              let attributes = type.GetCustomAttributes(typeof(CoverageRuleAttribute), true)
               where attributes != null && attributes.Length > 0
-              select new { Type = type, Attributes = attributes.Cast<RuleAttribute>() })
+              select new { Type = type, Attributes = attributes.Cast<CoverageRuleAttribute>() })
                .ToList();
 
             foreach (var t in typesWithMyAttribute)

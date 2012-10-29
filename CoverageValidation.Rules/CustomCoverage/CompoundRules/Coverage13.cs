@@ -7,7 +7,7 @@ using CoverageValidation.Rules.ExistRules;
 
 namespace CoverageValidation.Rules.CompoundRules
 {
-     [RuleAttribute]
+     [CoverageRule]
     public class Coverage13  : RuleBase
     {
         private CoverageIsCarried BIIsCarried;

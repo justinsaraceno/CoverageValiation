@@ -9,13 +9,15 @@ namespace CoverageValidation.Model
     {
         public List<VehicleFact> VehicleFacts { get; set;  }
         public List<CoverageLevelFact> PolicyCoverages { get; set; }
-
+        public string RiskState { get; set; }
     }
 
     public class VehicleFact
     {
         public int VehicleId { get; set; }
+        public string VehicleType { get; set; }
         public List<CoverageLevelFact> Coverages { get; set; }
+
     }
 
     public class CoverageLevelFact : IComparable

@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Geico.Applications.Foundation.Rules">
+      <HintPath>..\..\..\..\..\..\..\TFS\MSI\Dev\vNext\Applications\Foundation\Rules\src\Rules\bin\Debug\Geico.Applications.Foundation.Rules.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Workflow.Runtime" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,29 +49,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompareRules\CompareRuleBase.cs" />
-    <Compile Include="CompareRules\CoverageMustBeGreaterThanCoverageB.cs" />
-    <Compile Include="CompoundRules\Coverage13.cs" />
-    <Compile Include="CompoundRules\Coverage007.cs" />
-    <Compile Include="CompoundRules\CoverageAIsCarriedAndCoverageBIsCarriedAndCoverageAIsGreaterThanCoverageB.cs" />
-    <Compile Include="ExistRules\AreAnyCarried.cs" />
-    <Compile Include="ExistRules\CoverageIsNotCarried.cs" />
-    <Compile Include="ExistRules\NonAreCarried.cs" />
-    <Compile Include="ExistRules\CoverageIsCarried.cs" />
-    <Compile Include="ExistRules\ExistRuleBase.cs" />
-    <Compile Include="ExistRules\IfCoverageAExistsThenCcverageBMustExist.cs" />
+    <Compile Include="Coverage\Rules\Derived\Coverage005.cs" />
+    <Compile Include="Coverage\Rules\Derived\Coverage004.cs" />
+    <Compile Include="Coverage\Rules\Derived\Coverage003.cs" />
+    <Compile Include="Coverage\Rules\Derived\Coverage0021.cs" />
+    <Compile Include="Coverage\Rules\Derived\Coverage002.cs" />
+    <Compile Include="Coverage\Rules\Derived\Coverage001.cs" />
+    <Compile Include="Coverage\Rules\Foundation\Comparisons\AnyAreCarried.cs" />
+    <Compile Include="Coverage\Rules\Foundation\Comparisons\CompareTwoCoveragesBase.cs" />
+    <Compile Include="Coverage\Rules\Foundation\Comparisons\CompareCoverageToListBase.cs" />
+    <Compile Include="Coverage\Rules\Foundation\Comparisons\CoverageIsCarried.cs" />
+    <Compile Include="Coverage\Rules\Foundation\VehicleTwoCoverageRule.cs" />
+    <Compile Include="Coverage\Rules\Foundation\Comparisons\CoverageAIsCarriedAndCoverageBIsNotCarried.cs" />
+    <Compile Include="Coverage\Rules\Foundation\TwoCoverageRule.cs" />
+    <Compile Include="Coverage\Rules\Foundation\VehicleRuleBase.cs" />
+    <Compile Include="CustomCoverage\CompareRules\CompareRuleBase.cs" />
+    <Compile Include="CustomCoverage\CompareRules\CoverageMustBeGreaterThanCoverageB.cs" />
+    <Compile Include="CustomCoverage\CompoundRules\Coverage13.cs" />
+    <Compile Include="CustomCoverage\CompoundRules\Coverage007.cs" />
+    <Compile Include="CustomCoverage\CompoundRules\CoverageAIsCarriedAndCoverageBIsCarriedAndCoverageAIsGreaterThanCoverageB.cs" />
+    <Compile Include="Coverage\Rules\Foundation\CoverageRuleBase.cs" />
+    <Compile Include="CustomCoverage\ExistRules\AreAnyCarried.cs" />
+    <Compile Include="CustomCoverage\ExistRules\CoverageIsNotCarried.cs" />
+    <Compile Include="CustomCoverage\ExistRules\NonAreCarried.cs" />
+    <Compile Include="CustomCoverage\ExistRules\CoverageIsCarried.cs" />
+    <Compile Include="CustomCoverage\ExistRules\ExistRuleBase.cs" />
+    <Compile Include="CustomCoverage\ExistRules\IfCoverageAExistsThenCcverageBMustExist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RuleAttribute.cs" />
-    <Compile Include="RuleBase.cs" />
-    <Compile Include="RuleFactory.cs" />
-    <Compile Include="VehicleRules\Coverage045.cs" />
-    <Compile Include="VehicleRules\VehicleRuleBase.cs" />
+    <Compile Include="CustomCoverage\CoverageRuleAttribute.cs" />
+    <Compile Include="CustomCoverage\RuleBase.cs" />
+    <Compile Include="CustomCoverage\RuleFactory.cs" />
+    <Compile Include="Coverage\CoverageRuleSet.cs" />
+    <Compile Include="CustomCoverage\VehicleRules\Coverage045.cs" />
+    <Compile Include="CustomCoverage\VehicleRules\VehicleRuleBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoverageValidation.Model\CoverageValidation.Model.csproj">
       <Project>{8197E3A9-5137-4235-AAEC-7B4F9D9FE9F2}</Project>
       <Name>CoverageValidation.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Coverage\Containers\" />
+    <Folder Include="Coverage\Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
