@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using CoverageValidation.Model;
-using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
+﻿using CoverageValidation.Model.Resource.Validation;
+
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation
 {

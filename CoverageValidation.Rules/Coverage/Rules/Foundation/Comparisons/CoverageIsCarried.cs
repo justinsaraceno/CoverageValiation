@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using CoverageValidation.Model;
+using model = CoverageValidation.Model.Resource;
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 {
@@ -15,16 +16,20 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
             Mnemonic = mnemonic;
         }
 
-        public Func<List<Model.CoverageLevelFact>, bool> Comparer()
+        public Func<List<model.Coverage>, bool> Comparer()
         {
-            return (a) => (GetCoverage(a, Mnemonic).IsCarried);
+            //return (a) => (GetCoverage(a, Mnemonic).IsCarried);
+
+            //need to figure out what is carried means and put it here
+
+            return true
         }
         public override string ToString()
         {
             return string.Format("Coverage {0} is carried.", Mnemonic);
         }
 
-        private CoverageLevelFact GetCoverage(List<Model.CoverageLevelFact> a, string b)
+        private model.Coverage GetCoverage(List<model.Coverage> a, string b)
         {
             throw new NotImplementedException();
         }

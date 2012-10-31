@@ -33,7 +33,7 @@ namespace CoverageValidation.Rules
 
         public abstract RuleBase Build(CoverageRulesContainer request);
 
-        protected CoverageLevelFact GetCoverage(CoverageRulesContainer request, string mnemonic)
+        protected Model.Coverage GetCoverage(CoverageRulesContainer request, string mnemonic)
         {
             //This is where the work really comes in.  At this point we have just the metadata for the rule.
             //The effort here is to get the Coverage and the selected value and all the quirkds associated with taht.

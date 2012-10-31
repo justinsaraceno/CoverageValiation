@@ -1,5 +1,5 @@
 ﻿using System;
-using CoverageValidation.Model;
+using model = CoverageValidation.Model.Resource;
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 {
@@ -15,9 +15,10 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
                      CoverageBMnemonic);
         }
 
-        public override Func<CoverageLevelFact, CoverageLevelFact, bool> Comparer()
+        public override Func<model.Coverage, model.Coverage, bool> Comparer()
         {
-            return (a, b) => a.IsCarried && !b.IsCarried;
+            var aIsCarried = new CoverageIsCarried()
+            return (a, b) => a.IsCarried() && !b.IsCarried;
         }
     }
 }

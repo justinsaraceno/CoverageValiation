@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using CoverageValidation.Model;
+using CoverageValidation.Model.Resource.Validation;
 using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation

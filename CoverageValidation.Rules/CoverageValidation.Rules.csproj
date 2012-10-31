@@ -63,25 +63,9 @@
     <Compile Include="Coverage\Rules\Foundation\Comparisons\CoverageAIsCarriedAndCoverageBIsNotCarried.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\TwoCoverageRuleBase.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\VehicleRuleBase.cs" />
-    <Compile Include="CustomCoverage\CompareRules\CompareRuleBase.cs" />
-    <Compile Include="CustomCoverage\CompareRules\CoverageMustBeGreaterThanCoverageB.cs" />
-    <Compile Include="CustomCoverage\CompoundRules\Coverage13.cs" />
-    <Compile Include="CustomCoverage\CompoundRules\Coverage007.cs" />
-    <Compile Include="CustomCoverage\CompoundRules\CoverageAIsCarriedAndCoverageBIsCarriedAndCoverageAIsGreaterThanCoverageB.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\CoverageRuleBase.cs" />
-    <Compile Include="CustomCoverage\ExistRules\AreAnyCarried.cs" />
-    <Compile Include="CustomCoverage\ExistRules\CoverageIsNotCarried.cs" />
-    <Compile Include="CustomCoverage\ExistRules\NonAreCarried.cs" />
-    <Compile Include="CustomCoverage\ExistRules\CoverageIsCarried.cs" />
-    <Compile Include="CustomCoverage\ExistRules\ExistRuleBase.cs" />
-    <Compile Include="CustomCoverage\ExistRules\IfCoverageAExistsThenCcverageBMustExist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CustomCoverage\CoverageRuleAttribute.cs" />
-    <Compile Include="CustomCoverage\RuleBase.cs" />
-    <Compile Include="CustomCoverage\RuleFactory.cs" />
     <Compile Include="Coverage\CoverageRuleSet.cs" />
-    <Compile Include="CustomCoverage\VehicleRules\Coverage045.cs" />
-    <Compile Include="CustomCoverage\VehicleRules\VehicleRuleBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CoverageValidation.Model\CoverageValidation.Model.csproj">

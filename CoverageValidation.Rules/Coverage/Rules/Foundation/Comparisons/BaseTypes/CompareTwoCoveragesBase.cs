@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using CoverageValidation.Model;
 using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
+using model = CoverageValidation.Model.Resource;
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation
 {
@@ -20,7 +21,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation
 
         public abstract override string ToString();
 
-        public abstract Func<CoverageLevelFact, CoverageLevelFact, bool> Comparer();
+        public abstract Func<model.Coverage, model.Coverage, bool> Comparer();
 
     }
 }

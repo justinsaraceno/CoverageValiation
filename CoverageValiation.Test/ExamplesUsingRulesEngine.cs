@@ -3,11 +3,13 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using CoverageValidation.Model;
+using CoverageValidation.Model.Resource.Validation;
 using CoverageValidation.Rules.Coverage;
 using CoverageValidation.Rules.Coverage.Rules;
 using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
 using Geico.Applications.Foundation.Rules;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using CoverageValidation.Model.Resource;
 
 namespace CoverageValiation.Test
 {
@@ -36,16 +38,14 @@ namespace CoverageValiation.Test
             var ruleInput = new CoverageValidationRequest();
             var ruleOutput = new CoverageValidationResponse();
 
-            ruleInput.PolicyCoverages = new List<CoverageLevelFact>();
-            var biCoverage = new CoverageLevelFact() { CoverageMnemonic = "BI", LimitMnemonic = "100/300" };
-            var pdCoverage = new CoverageLevelFact() { CoverageMnemonic = "PD", LimitMnemonic = "200/300" };
+            ruleInput.Coverages = new List<Coverage>();
 
-            ruleInput.PolicyCoverages.Add(biCoverage);
-            ruleInput.PolicyCoverages.Add(pdCoverage);
-
-
+            CoverageType bi = new CoverageType("000001", "Policy", "Bodily Injury", "BodilyInjury");
+            CoverageType pd = new CoverageType("000002", "Policy", "Property Damage", "Property Damage");
+            Limit l = new Limit("0001", 100000, 300000, "Notsurewhat the desc is", false);
+            ruleInput.Coverages.Add(new Coverage(bi, l, null, 1));
+            ruleInput.Coverages.Add(new Coverage(pd, l, null, 1));
             var facts = new CoverageRulesContainer(ruleInput, ruleOutput);
-
             var controller = new FakeRuleSet<CoverageRulesContainer>();
             controller.AddRule<Coverage001>();
 
@@ -53,8 +53,6 @@ namespace CoverageValiation.Test
             controller.Execute(facts);
 
             Console.WriteLine(new Coverage001());
-
-
             //Assert
             // ruleOutput.PolicyState.Should().Be(PolicyState.NonIssued);
         }
@@ -66,8 +64,14 @@ namespace CoverageValiation.Test
         {
             //Arrange 
             var comparer = new CoverageAIsCarriedAndCoverageBIsNotCarried("BI", "PD");
-            var biCoverage = new CoverageLevelFact() { CoverageMnemonic = "BI", LimitMnemonic = "100/300", IsCarried = true };
-            var pdCoverage = new CoverageLevelFact() { CoverageMnemonic = "PD", LimitMnemonic = "200/300", IsCarried = false };
+     
+            CoverageType bi = new CoverageType("000001", "Policy", "Bodily Injury", "BodilyInjury");
+            CoverageType pd = new CoverageType("000002", "Policy", "Property Damage", "Property Damage");
+            Limit l = new Limit("0001", 100000, 300000, "Notsurewhat the desc is", false);
+            Limit l2 = new Limit("0002", 200000, 300000, "Notsurewhat the desc is", false);
+
+            var biCoverage = new Coverage(bi, l, null, 1);
+            var pdCoverage = new Coverage(pd, l2, null, 1);
 
             //Act
             var result = comparer.Comparer()(biCoverage, pdCoverage);

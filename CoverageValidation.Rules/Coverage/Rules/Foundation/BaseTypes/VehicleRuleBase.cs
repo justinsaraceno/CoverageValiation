@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using CoverageValidation.Model;
-using Geico.Applications.Foundation.Rules;
+using CoverageValidation.Model.Resource.Validation;
+
 
 namespace CoverageValidation.Rules.Coverage.Rules
 {

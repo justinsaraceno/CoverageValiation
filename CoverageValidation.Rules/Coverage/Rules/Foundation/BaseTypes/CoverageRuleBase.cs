@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CoverageValidation.Model;
+using CoverageValidation.Model.Resource.Validation;
 using Geico.Applications.Foundation.Rules;
+using model = CoverageValidation.Model.Resource;
 
 namespace CoverageValidation.Rules.Coverage.Rules
 {
@@ -20,7 +21,7 @@ namespace CoverageValidation.Rules.Coverage.Rules
 
         public abstract bool Evaluate(CoverageRulesContainer fact);
 
-        public CoverageLevelFact GetCoverage(CoverageRulesContainer fact, string mnemonic)
+        public model.Coverage GetCoverage(CoverageRulesContainer fact, string mnemonic)
         {
             return fact.Request.PolicyCoverages.First(c => c.CoverageMnemonic == mnemonic);
         }

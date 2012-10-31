@@ -11,10 +11,10 @@ namespace CoverageValidation.Rules.CompareRules
         protected string CoverageAMnemonic;
         protected string CoverageBMnemonic;
         
-        protected CoverageLevelFact CoverageAFact;
-        protected CoverageLevelFact CoverageBFact;
+        protected Model.Coverage CoverageAFact;
+        protected Model.Coverage CoverageBFact;
         
-        protected Func<CoverageLevelFact, CoverageLevelFact, bool> comparer;
+        protected Func<Model.Coverage, Model.Coverage, bool> comparer;
 
         public override RuleBase Execute()
         {

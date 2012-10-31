@@ -1,4 +1,5 @@
-﻿using CoverageValidation.Rules.Coverage.Rules.Foundation;
+﻿using CoverageValidation.Model.Resource.Validation;
+using CoverageValidation.Rules.Coverage.Rules.Foundation;
 using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
 using Geico.Applications.Foundation.Rules;
 
@@ -15,12 +16,12 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
             IncludedVehicle.AddRange(new[] { "01", "05" });
         }
 
-        protected override void Then(Model.CoverageRulesContainer fact)
+        protected override void Then(CoverageRulesContainer fact)
         {
             throw new System.NotImplementedException();
         }
 
-        public override bool Evaluate(Model.CoverageRulesContainer fact)
+        public override bool Evaluate(CoverageRulesContainer fact)
         {
             var rRIsCarried = RR.Comparer()(fact.Request.PolicyCoverages);
             var comprehensiveIsNotCarried = !COMP.Comparer()(fact.Request.PolicyCoverages);

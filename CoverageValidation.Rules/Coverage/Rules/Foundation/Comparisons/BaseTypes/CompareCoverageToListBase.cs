@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CoverageValidation.Model;
+using model = CoverageValidation.Model.Resource;
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 {
@@ -13,7 +13,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 
         }
         protected List<string> CoverageMnemonics { get; private set; }
-        public abstract Func<List<CoverageLevelFact>, bool> Comparer();
+        public abstract Func<List<model.Coverage>, bool> Comparer();
         public abstract string ToString();
     }
 }

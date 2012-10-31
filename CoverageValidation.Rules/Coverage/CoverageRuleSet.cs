@@ -1,4 +1,5 @@
 ﻿using CoverageValidation.Model;
+using CoverageValidation.Model.Resource.Validation;
 using CoverageValidation.Rules.Coverage.Rules;
 using CoverageValidation.Rules.Coverage.Rules.Derived;
 using Geico.Applications.Foundation.Rules;

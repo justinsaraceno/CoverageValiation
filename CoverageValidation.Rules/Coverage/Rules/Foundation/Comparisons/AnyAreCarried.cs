@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using model = CoverageValidation.Model.Resource;
+
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 {
@@ -11,7 +12,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
             : base(mnemonics)
         {}
 
-        public override Func<List<Model.CoverageLevelFact>, bool> Comparer()
+        public override Func<List<model.Coverage>, bool> Comparer()
         {
             return (a) => CoverageMnemonics.Select(coverageMnemonic => GetCoverage(a, coverageMnemonic)).Any(r => r != null);
         }
@@ -20,7 +21,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
             return "this is the two string of AnyAreCarried Comparer";
         }
 
-        private object GetCoverage(List<Model.CoverageLevelFact> a, string b)
+        private object GetCoverage(List<model.Coverage> a, string b)
         {
             throw new NotImplementedException();
         }

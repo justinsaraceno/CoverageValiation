@@ -9,9 +9,9 @@ namespace CoverageValidation.Rules.ExistRules
     public class CoverageIsNotCarried : RuleBase
     {
         protected string coverageMnemonic;
-        protected CoverageLevelFact coverageFact;
+        protected Model.Coverage coverageFact;
 
-        protected Func<CoverageLevelFact, bool> comparer = a => !a.IsCarried;
+        protected Func<Model.Coverage, bool> comparer = a => !a.IsCarried;
 
         public override string ToString()
         {

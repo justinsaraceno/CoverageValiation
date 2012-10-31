@@ -1,4 +1,4 @@
-﻿using CoverageValidation.Rules.Coverage.Rules.Foundation;
+﻿using CoverageValidation.Model.Resource.Validation;
 using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
 using Geico.Applications.Foundation.Rules;
 
@@ -11,12 +11,12 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
         private readonly CoverageIsCarried COMP = new CoverageIsCarried("COMP");
         private readonly CoverageIsCarried COMB = new CoverageIsCarried("COLL");
 
-        protected override void Then(Model.CoverageRulesContainer fact)
+        protected override void Then(CoverageRulesContainer fact)
         {
             throw new System.NotImplementedException();
         }
 
-        public override bool Evaluate(Model.CoverageRulesContainer fact)
+        public override bool Evaluate(CoverageRulesContainer fact)
         {
             var CB_Radio_Car_Phone_coverage_is_carried = CB.Comparer()(fact.Request.PolicyCoverages);
             var ComprehensiveIsNotCarried = !COMP.Comparer()(fact.Request.PolicyCoverages);
