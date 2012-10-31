@@ -22,7 +22,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 
         public override bool Compare(CoverageRulesContainer fact)
         {
-            return base.Compare((a, b) => fact1.Comparer()(fact) && !fact2.Comparer()(fact));
+            return base.Compare((a, b) => fact1.Comparer()(fact) && fact2.Comparer()(fact));
         }
     }
 }
