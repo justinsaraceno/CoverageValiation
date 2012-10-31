@@ -2,14 +2,13 @@
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
-using CoverageValidation.Model;
+using CoverageValidation.Model.Resource;
 using CoverageValidation.Model.Resource.Validation;
 using CoverageValidation.Rules.Coverage;
 using CoverageValidation.Rules.Coverage.Rules;
 using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
 using Geico.Applications.Foundation.Rules;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CoverageValidation.Model.Resource;
 
 namespace CoverageValiation.Test
 {
@@ -64,17 +63,22 @@ namespace CoverageValiation.Test
         {
             //Arrange 
             var comparer = new CoverageAIsCarriedAndCoverageBIsNotCarried("BI", "PD");
-     
+
+            var ruleInput = new CoverageValidationRequest();
+            var ruleOutput = new CoverageValidationResponse();
+
+            ruleInput.Coverages = new List<Coverage>();
+
             CoverageType bi = new CoverageType("000001", "Policy", "Bodily Injury", "BodilyInjury");
             CoverageType pd = new CoverageType("000002", "Policy", "Property Damage", "Property Damage");
             Limit l = new Limit("0001", 100000, 300000, "Notsurewhat the desc is", false);
-            Limit l2 = new Limit("0002", 200000, 300000, "Notsurewhat the desc is", false);
-
-            var biCoverage = new Coverage(bi, l, null, 1);
-            var pdCoverage = new Coverage(pd, l2, null, 1);
+            ruleInput.Coverages.Add(new Coverage(bi, l, null, 1));
+            ruleInput.Coverages.Add(new Coverage(pd, l, null, 1));
+            var facts = new CoverageRulesContainer(ruleInput, ruleOutput);
+            var controller = new FakeRuleSet<CoverageRulesContainer>();
 
             //Act
-            var result = comparer.Comparer()(biCoverage, pdCoverage);
+            var result = comparer.Compare(facts);
 
             //Assert
             Assert.IsTrue(result);

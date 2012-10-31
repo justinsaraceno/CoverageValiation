@@ -45,7 +45,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation
                 var coverageA = GetCoverage(fact, comparer.CoverageAMnemonic);
                 var coverageB = GetCoverage(fact, comparer.CoverageAMnemonic);
 
-                if (!comparer.Comparer()(coverageA, coverageB))
+                if (!comparer.Compare(fact))
                 {
                     //Add to the message list or some kind of object to store to eventually add to the result.
                     ruleIsTrue = true;

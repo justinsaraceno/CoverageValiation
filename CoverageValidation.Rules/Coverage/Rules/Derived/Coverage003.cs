@@ -28,7 +28,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
         {
             var coverageA = GetCoverage(fact, BINOtCarriedAndCOLIsNotCared.CoverageAMnemonic);
             var coverageB = GetCoverage(fact, BINOtCarriedAndCOLIsNotCared.CoverageBMnemonic);
-            var bINOtCarriedAndCOLIsNotCared = BINOtCarriedAndCOLIsNotCared.Comparer()(coverageA, coverageB);
+            var bINOtCarriedAndCOLIsNotCared = BINOtCarriedAndCOLIsNotCared.Compare(fact);
 
             var anyOfTHeFollowingAreCarried = AnyOfTHeFollowingAreCarried.Comparer()(fact.Request.Coverages);
 

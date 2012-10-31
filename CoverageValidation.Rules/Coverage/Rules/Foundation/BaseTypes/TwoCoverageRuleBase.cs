@@ -14,10 +14,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation
 
         public override bool Evaluate(CoverageRulesContainer fact)
         {
-            var coverageA = GetCoverage(fact, comparer.CoverageAMnemonic);
-            var coverageB = GetCoverage(fact, comparer.CoverageBMnemonic);
-
-            return comparer.Comparer()(coverageA, coverageB);
+            return comparer.Compare(fact);
         }
         public override string ToString()
         {
