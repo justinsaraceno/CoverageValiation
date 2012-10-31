@@ -58,7 +58,9 @@
     <Compile Include="Coverage\Rules\Foundation\Comparisons\AnyAreCarried.cs" />
     <Compile Include="Coverage\Rules\Foundation\Comparisons\BaseTypes\CompareTwoCoveragesBase.cs" />
     <Compile Include="Coverage\Rules\Foundation\Comparisons\BaseTypes\CompareCoverageToListBase.cs" />
-    <Compile Include="Coverage\Rules\Foundation\Comparisons\BaseTypes\SingleCompareBase.cs" />
+    <Compile Include="Coverage\Rules\Foundation\Comparisons\BaseTypes\SingleCoverageVocabBase.cs" />
+    <Compile Include="Coverage\Rules\Foundation\Comparisons\BaseTypes\VocabBase.cs" />
+    <Compile Include="Coverage\Rules\Foundation\Comparisons\CoverageIsNotCarried.cs" />
     <Compile Include="Coverage\Rules\Foundation\Comparisons\CoverageIsCarried.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\VehicleTwoCoverageRuleBase.cs" />
     <Compile Include="Coverage\Rules\Foundation\Comparisons\CoverageAIsCarriedAndCoverageBIsNotCarried.cs" />
@@ -75,11 +77,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Coverage\Containers\" />
     <Folder Include="Coverage\Rules\Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

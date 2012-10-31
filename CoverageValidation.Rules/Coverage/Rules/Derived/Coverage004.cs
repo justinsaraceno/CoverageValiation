@@ -18,9 +18,9 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
 
         public override bool Evaluate(CoverageRulesContainer fact)
         {
-            var CB_Radio_Car_Phone_coverage_is_carried = CB.Comparer()(fact.Request.Coverages);
-            var ComprehensiveIsNotCarried = !COMP.Comparer()(fact.Request.Coverages);
-            var Combined_AdditionalIsNotCarried = !COMB.Comparer()(fact.Request.Coverages);
+            var CB_Radio_Car_Phone_coverage_is_carried = CB.Comparer()(fact);
+            var ComprehensiveIsNotCarried = !COMP.Comparer()(fact);
+            var Combined_AdditionalIsNotCarried = !COMB.Comparer()(fact);
 
             if (CB_Radio_Car_Phone_coverage_is_carried && (ComprehensiveIsNotCarried || Combined_AdditionalIsNotCarried))
             {

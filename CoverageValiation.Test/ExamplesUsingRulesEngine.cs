@@ -73,7 +73,7 @@ namespace CoverageValiation.Test
             CoverageType pd = new CoverageType("000002", "Policy", "Property Damage", "Property Damage");
             Limit l = new Limit("0001", 100000, 300000, "Notsurewhat the desc is", false);
             ruleInput.Coverages.Add(new Coverage(bi, l, null, 1));
-            ruleInput.Coverages.Add(new Coverage(pd, l, null, 1));
+        //    ruleInput.Coverages.Add(new Coverage(pd, l, null, 1));
             var facts = new CoverageRulesContainer(ruleInput, ruleOutput);
             var controller = new FakeRuleSet<CoverageRulesContainer>();
 

@@ -12,7 +12,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
             : base(coverageAMnemonic, coverageBMnemonic)
         {
             fact1 = new CoverageIsCarried(coverageAMnemonic);
-            fact2 = new CoverageIsCarried(coverageBMnemonic);
+            fact2 = new CoverageIsNotCarried(coverageBMnemonic);
         }
 
         public override string ToString()
@@ -22,7 +22,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 
         public override bool Compare(CoverageRulesContainer fact)
         {
-            return base.Compare((a, b) => fact1.Comparer()(fact.Request.Coverages) && !fact2.Comparer()(fact.Request.Coverages));
+            return base.Compare((a, b) => fact1.Comparer()(fact) && !fact2.Comparer()(fact));
         }
     }
 }

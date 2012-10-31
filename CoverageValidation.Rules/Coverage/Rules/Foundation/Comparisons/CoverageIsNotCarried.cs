@@ -9,9 +9,9 @@ using model = CoverageValidation.Model.Resource;
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 {
-    public class CoverageIsCarried : SingleCoverageVocabBase
+    public class CoverageIsNotCarried : SingleCoverageVocabBase
     {
-        public CoverageIsCarried(string mnemonic)
+        public CoverageIsNotCarried(string mnemonic)
             : base(mnemonic)
         {
         }
@@ -20,14 +20,18 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
         {
             //need to figure out what is carried means and put it here
             return (a) =>
-                       {
-                           var coverage = GetCoverage(a.Request.Coverages, CoverageMnemonic);
-                           return (coverage != null);
-                       };
+            {
+                var coverage = GetCoverage(a.Request.Coverages, CoverageMnemonic);
+                return (coverage == null);
+            };
         }
         public override string ToString()
         {
-            return string.Format("Coverage {0} is carried.", CoverageMnemonic);
+            return string.Format("Coverage {0} is not carried.", CoverageMnemonic);
         }
+
+        
+
+      
     }
 }
