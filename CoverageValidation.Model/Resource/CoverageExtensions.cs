@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CoverageValidation.Model.Resource
 {
-    static class CoverageExtensions
+    public static class CoverageExtensions
     {
         public static bool IsCarried(this Coverage coverage)
         {

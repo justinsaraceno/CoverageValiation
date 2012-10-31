@@ -23,7 +23,7 @@ namespace CoverageValidation.Rules.Coverage.Rules
 
         public model.Coverage GetCoverage(CoverageRulesContainer fact, string mnemonic)
         {
-            return fact.Request.PolicyCoverages.First(c => c.CoverageMnemonic == mnemonic);
+            return fact.Request.Coverages.First(c => c.CoverageType.Mnemonic == mnemonic);
         }
 
         protected override bool If(CoverageRulesContainer fact)

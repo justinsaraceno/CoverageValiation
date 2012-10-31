@@ -37,7 +37,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation
         public override bool Evaluate(CoverageRulesContainer fact)
         {
             var ruleIsTrue = false;
-            foreach (var vehicleFact in fact.Request.VehicleFacts)
+            foreach (var vehicleFact in fact.Request.Coverages)
             {
                 if (!base.RuleApplies(fact)) continue;
 

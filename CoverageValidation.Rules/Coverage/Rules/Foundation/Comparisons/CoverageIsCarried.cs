@@ -18,11 +18,11 @@ namespace CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons
 
         public Func<List<model.Coverage>, bool> Comparer()
         {
-            //return (a) => (GetCoverage(a, Mnemonic).IsCarried);
+            return (a) => (GetCoverage(a, Mnemonic).Equals(null));
 
             //need to figure out what is carried means and put it here
 
-            return true
+            
         }
         public override string ToString()
         {

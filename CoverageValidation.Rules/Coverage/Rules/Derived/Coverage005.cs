@@ -23,8 +23,8 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
 
         public override bool Evaluate(CoverageRulesContainer fact)
         {
-            var rRIsCarried = RR.Comparer()(fact.Request.PolicyCoverages);
-            var comprehensiveIsNotCarried = !COMP.Comparer()(fact.Request.PolicyCoverages);
+            var rRIsCarried = RR.Comparer()(fact.Request.Coverages);
+            var comprehensiveIsNotCarried = !COMP.Comparer()(fact.Request.Coverages);
 
             if (rRIsCarried && comprehensiveIsNotCarried)
             {

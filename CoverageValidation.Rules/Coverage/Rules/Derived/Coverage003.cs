@@ -30,7 +30,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
             var coverageB = GetCoverage(fact, BINOtCarriedAndCOLIsNotCared.CoverageBMnemonic);
             var bINOtCarriedAndCOLIsNotCared = BINOtCarriedAndCOLIsNotCared.Comparer()(coverageA, coverageB);
 
-            var anyOfTHeFollowingAreCarried = AnyOfTHeFollowingAreCarried.Comparer()(fact.Request.PolicyCoverages);
+            var anyOfTHeFollowingAreCarried = AnyOfTHeFollowingAreCarried.Comparer()(fact.Request.Coverages);
 
             if (bINOtCarriedAndCOLIsNotCared && anyOfTHeFollowingAreCarried)
             {
