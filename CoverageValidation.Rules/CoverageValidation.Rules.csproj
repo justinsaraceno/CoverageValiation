@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Coverage\Rules\Derived\Coverage001InLine.cs" />
     <Compile Include="Coverage\Rules\Derived\Coverage005.cs" />
     <Compile Include="Coverage\Rules\Derived\Coverage004.cs" />
     <Compile Include="Coverage\Rules\Derived\Coverage003.cs" />
@@ -63,7 +64,7 @@
     <Compile Include="Coverage\Rules\Foundation\Comparisons\CoverageIsNotCarried.cs" />
     <Compile Include="Coverage\Rules\Foundation\Comparisons\CoverageIsCarried.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\VehicleTwoCoverageRuleBase.cs" />
-    <Compile Include="Coverage\Rules\Foundation\Comparisons\CoverageAIsCarriedAndCoverageBIsNotCarried.cs" />
+    <Compile Include="Coverage\Rules\Foundation\Comparisons\MustCarryCoverageAToCarryCoverageB.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\TwoCoverageRuleBase.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\VehicleRuleBase.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\CoverageRuleBase.cs" />

@@ -10,11 +10,11 @@ using model = CoverageValidation.Model.Resource;
 
 namespace CoverageValidation.Rules.Coverage.Rules.Foundation
 {
-    public abstract class CompareTwoCoveragesBase
+    public abstract class CompareTwoCoveragesBase 
     {
         public string CoverageAMnemonic { get; private set; }
         public string CoverageBMnemonic { get; private set; }
-
+        
         protected SingleCoverageVocabBase fact1;
         protected SingleCoverageVocabBase fact2;
 

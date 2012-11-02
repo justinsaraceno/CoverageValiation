@@ -8,7 +8,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
     [Rule("Coverage003")]
     public class Coverage003 : CoverageRuleBase
     {
-        private readonly CompareTwoCoveragesBase BINOtCarriedAndCOLIsNotCared = new CoverageAIsCarriedAndCoverageBIsNotCarried("BI", @"SLBI/PD");
+        private readonly CompareTwoCoveragesBase BINOtCarriedAndCOLIsNotCared = new MustCarryCoverageAToCarryCoverageB("BI", @"SLBI/PD");
         private readonly CompareCoverageToListBase AnyOfTHeFollowingAreCarried = new AnyAreCarried("MED", "UM","UMPD", "UMBIEC",@"SLUM/PD");
 
         public Coverage003()

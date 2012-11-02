@@ -8,7 +8,7 @@ namespace CoverageValidation.Rules.Coverage.Rules.Derived
     public class Coverage002 : VehicleTwoCoverageRuleBase
     {
         public Coverage002()
-            : base(new CoverageAIsCarriedAndCoverageBIsNotCarried("PD","BI"))
+            : base(new MustCarryCoverageAToCarryCoverageB("PD","BI"))
         {
             IncludedStates.AddRange(new[] { "FL"});
             ExcludedVehicle.AddRange(new[] { "04" });

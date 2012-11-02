@@ -62,7 +62,7 @@ namespace CoverageValiation.Test
         public void TestCoverageAIsCarriedAndCoverageBIsNotCarriedForBiAndPD()
         {
             //Arrange 
-            var comparer = new CoverageAIsCarriedAndCoverageBIsNotCarried("BI", "PD");
+            var comparer = new MustCarryCoverageAToCarryCoverageB("BI", "PD");
 
             var ruleInput = new CoverageValidationRequest();
             var ruleOutput = new CoverageValidationResponse();

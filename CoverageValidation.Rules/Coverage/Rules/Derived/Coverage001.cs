@@ -7,6 +7,6 @@ namespace CoverageValidation.Rules.Coverage.Rules
     [Rule("Coverage001")]
     public class Coverage001 : TwoCoverageRuleBase
     {
-        public Coverage001() : base(new CoverageAIsCarriedAndCoverageBIsNotCarried("BI","PD")) {}
+        public Coverage001() : base(new MustCarryCoverageAToCarryCoverageB("PD","BI")) {}
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace CoverageValidation.Model.Resource.Validation
 {
-    public class CoverageRulesContainer
+    public class CoverageRulesContainer 
     {
         public CoverageValidationRequest Request;
         public CoverageValidationResponse Response;

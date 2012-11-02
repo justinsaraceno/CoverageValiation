@@ -6,7 +6,7 @@ using Geico.Applications.Foundation.Rules;
 namespace CoverageValidation.Rules.Coverage.Rules
 {
     [Rule("Coverage002")]
-    public class Coverage0021 : CoverageAIsCarriedAndCoverageBIsNotCarried
+    public class Coverage0021 : MustCarryCoverageAToCarryCoverageB
     {
         public Coverage0021()
             : base("PD", "BI")
