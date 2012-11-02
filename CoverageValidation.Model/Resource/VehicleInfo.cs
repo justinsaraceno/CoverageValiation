@@ -31,5 +31,16 @@
         /// Gets or sets the Model year of the vehicle
         /// </summary>
         public int ModelYear { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Model year of the vehicle
+        /// </summary>
+        public int ModelMake { get; set; }
+
+        /// <summary>
+        /// Gets or sets the Model year of the vehicle
+        /// </summary>
+        public int ModelName { get; set; }
+
     }
 }

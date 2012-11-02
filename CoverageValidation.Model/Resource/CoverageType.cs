@@ -1,4 +1,3 @@
-using  CoverageValidation.Model.Resource.Enums;
 
 namespace  CoverageValidation.Model.Resource
 {

@@ -53,9 +53,6 @@
     <Compile Include="Resource\CoverageType.cs" />
     <Compile Include="Resource\Deductible.cs" />
     <Compile Include="Resource\DriverInfo.cs" />
-    <Compile Include="Resource\Enums\CoverageLevel.cs" />
-    <Compile Include="Resource\Enums\InsuranceStatus.cs" />
-    <Compile Include="Resource\Enums\PackageKind.cs" />
     <Compile Include="Resource\Limit.cs" />
     <Compile Include="Resource\Validation\Message.cs" />
     <Compile Include="Resource\Validation\CoverageValidationResponse.cs" />
