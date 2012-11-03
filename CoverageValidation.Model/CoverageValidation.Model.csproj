@@ -54,6 +54,9 @@
     <Compile Include="Resource\Deductible.cs" />
     <Compile Include="Resource\DriverInfo.cs" />
     <Compile Include="Resource\Limit.cs" />
+    <Compile Include="Resource\Validation\VehicleCoverageContainer.cs" />
+    <Compile Include="Resource\Validation\VehicleCoverageRequest.cs" />
+    <Compile Include="Resource\Validation\VehicleCoverageResponse.cs" />
     <Compile Include="Resource\Validation\Message.cs" />
     <Compile Include="Resource\Validation\CoverageValidationResponse.cs" />
     <Compile Include="Resource\Validation\CoverageValidationRequest.cs" />

@@ -10,12 +10,18 @@ namespace CoverageValidation.Rules.Coverage
     {
         public CoverageRuleSet()
         {
-            AddRule<Coverage001>();
-            AddRule<Coverage002>();
-            //AddRule<Coverage0021>();
-            AddRule<Coverage003>();
-            AddRule<Coverage004>();
-            AddRule<Coverage005>();
+            // This rule validates all the vehicle level stuff. 
+            AddRule<VehicleRule>();
+
+            //The following work at a higher level for example accross vehicles. 
+
+
+
+            ////AddRule<Coverage002>();
+            //////AddRule<Coverage0021>();
+            ////AddRule<Coverage003>();
+            ////AddRule<Coverage004>();
+            ////AddRule<Coverage005>();
 
             //AddRule<CoverageIsCarried>(new CoverageIsCarried("UM"), "Coverage002");
             //AddRule<CoverageIsCarried>(new CoverageIsCarried("UMP"), "Coverage003");
