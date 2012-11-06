@@ -2010,6 +2010,26 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="adfb2080-40af-4f8d-a1cf-712a09a7a89b"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1317e47c-c4a9-4e2f-a23e-c205eaeb4f66"
+        LastKnownName="ESModel"
+        LastKnownLocation="Package_1154.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="80527610-51c6-43e7-9d14-56ac4538c819"
+        LastKnownName="CoverageValidation.Model.Resource.Validation"
+        LastKnownLocation="Package1_1154.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

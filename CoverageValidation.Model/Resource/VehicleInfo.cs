@@ -30,17 +30,22 @@
         /// <summary>
         /// Gets or sets the Model year of the vehicle
         /// </summary>
-        public int ModelYear { get; set; }
+        public string ModelYear { get; set; }
 
         /// <summary>
         /// Gets or sets the Model year of the vehicle
         /// </summary>
-        public int ModelMake { get; set; }
+        public string ModelMake { get; set; }
 
         /// <summary>
         /// Gets or sets the Model year of the vehicle
         /// </summary>
-        public int ModelName { get; set; }
+        public string ModelName { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("{0} {1} {2}", this.ModelYear, this.ModelMake, this.ModelName);
+        }
 
     }
 }

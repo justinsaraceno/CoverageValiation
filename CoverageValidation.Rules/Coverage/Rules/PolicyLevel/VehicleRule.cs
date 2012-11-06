@@ -2,67 +2,56 @@
 using System.Linq;
 using CoverageValidation.Model.Resource;
 using CoverageValidation.Model.Resource.Validation;
-using CoverageValidation.Rules.Coverage.Rules.Foundation;
-using CoverageValidation.Rules.Coverage.Rules.Foundation.Comparisons;
 using Geico.Applications.Foundation.Rules;
-using CoverageValidation.Rules.Coverage.Rules.Derived;
+
 
 
 namespace CoverageValidation.Rules.Coverage.Rules
 {
-    [Rule("VehicleRUleSet")]
-    public class VehicleRule : BaseRule<CoverageRulesContainer>
+    [Rule("Coverage030")]
+    public class Coverage030 : BaseRule<CoverageRulesContainer>
     {
-        //Must have PD carried to carry BI
-        // Bodily Injury Coverage (BI) is carried AND Property Damage Coverage is NOT carried  "   
+        // MED coverage limits must be the same on all vehicles
 
-
-        /*This shows the issue at the the entire package is too big to execute on. 
-         * There are rules that run on just the vehicle with collection of coverages and some that run on the entire policy.
-         * Therefore there must be a difference. and they should be executed as such.  
-         * So I can see the entire container executing the same rule set for each vehicle.
-        */
-
+        /* "MED Limits DO Not match for each active vehicle
+                AND
+            Vehicle.VehicleTypeCode <> 06, 21, 25-29"   
+         */
 
         protected override bool If(CoverageRulesContainer fact)
         {
-            //Since all the coverages come in a single list they need to be put into groups since they are evaluated per vehicle.
-            var coveragesByVehicle = new Dictionary<VehicleInfo, List<Model.Resource.Coverage>>();
 
-            foreach (var vehicle in fact.Request.Vehicles)
+            var medCoverages = fact.Request.Coverages.Where(f => f.CoverageType.Mnemonic == "MED").ToList();
+
+            //Find all coverages for vehicles in the rule 
+            //Vehicle.VehicleTypeCode <> 06, 21, 25-29"  
+
+            var excludedTypes = new[] { "06", "21", "25", "26", "27", "28", "29" };
+
+            //get only these vehicle types
+            var vehicles = fact.Request.Vehicles.Where(c => !excludedTypes.Contains(c.VehicleTypeCode)).ToList();
+
+
+            //Remove the coverages that on vehicles not excluded. 
+            medCoverages.RemoveAll(c => !vehicles.Exists(d => d.Id == c.VehicleId));
+
+            //Do the comparison. 
+            var medLimit = medCoverages[0].Limit;
+            foreach (var medCoverage in medCoverages)
             {
-                var coverages = fact.Request.Coverages.Where(c => c.VehicleId == vehicle.Id).ToList();
-                coveragesByVehicle.Add(vehicle,coverages);
+                if (medLimit.Equals(medCoverage.Limit))
+                    medLimit = medCoverage.Limit;
+                else
+                {
+                    return true;
+                }
             }
-
-            var ruleset = new CoverageVehicleRuleSet();
-
-            //Now loop through all then vehicles and validate the coverages
-            foreach (var item in coveragesByVehicle)
-            {
-                var request = new VehicleCoverageRequest()
-                                  {
-                                      Coverages = item.Value,
-                                      Drivers = fact.Request.Drivers,
-                                      RiskState = fact.Request.RiskState,
-                                      Vehicles = item.Key
-                                  };
-
-                var response = new VehicleCoverageResponse();
-                var container = new VehicleCoverageRulesContainer(request, response);
-
-                ruleset.Execute(container);
-
-                fact.Response.Messages.AddRange(container.Response.Messages);
-
-            }
-            
-            return fact.Response.Messages.Any();
-
+            return false;
         }
 
         protected override void Then(CoverageRulesContainer fact)
         {
+            fact.Response.Messages.Add(new Message() { MessageId = this.Name, Description = string.Format(CoverageValidationMessages.ResourceManager.GetString(this.Name), fact.Request.RiskState) });
         }
     }
 }

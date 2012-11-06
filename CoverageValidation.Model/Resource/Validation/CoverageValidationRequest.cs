@@ -8,6 +8,7 @@ namespace CoverageValidation.Model.Resource.Validation
         public List<DriverInfo> Drivers { get; set; }
         public List<VehicleInfo> Vehicles { get; set; }
         public string RiskState { get; set; }
+        public PolicyInfo PolicyFacts { get; set; }
 
     }
 }

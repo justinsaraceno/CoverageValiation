@@ -1,7 +1,6 @@
 ﻿using CoverageValidation.Model;
 using CoverageValidation.Model.Resource.Validation;
 using CoverageValidation.Rules.Coverage.Rules;
-using CoverageValidation.Rules.Coverage.Rules.Derived;
 using Geico.Applications.Foundation.Rules;
 
 namespace CoverageValidation.Rules.Coverage
@@ -11,7 +10,7 @@ namespace CoverageValidation.Rules.Coverage
         public CoverageRuleSet()
         {
             // This rule validates all the vehicle level stuff. 
-            AddRule<VehicleRule>();
+        //    AddRule<VehicleRule>();
 
             //The following work at a higher level for example accross vehicles. 
 
@@ -29,5 +28,6 @@ namespace CoverageValidation.Rules.Coverage
 
         }
 
+        
     }
 }

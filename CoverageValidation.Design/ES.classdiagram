@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b295322d-831a-4f83-8ec3-ea474033d489" name="ES" linkedPackageId="3c49e8ba-729d-468c-8166-e95ef3bd246d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="354cc6f2-c544-402c-9af0-a93a1b22f433" name="ESModel">
+        <elementDefinition Id="1317e47c-c4a9-4e2f-a23e-c205eaeb4f66" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="1ba8e64d-42d2-4ed6-af03-9a9ab83f40a2" name="CoverageType" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1ed08297-bf6a-4471-af7e-1e3fd4a52da0" />
+              <ownedAttributesInternal>
+                <property Id="146d8fb1-a8d3-4539-a80e-7ffaaae3e833" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="12763d74-a2e8-4861-90c1-14894977c3de" />
+                </property>
+                <property Id="387f4421-166f-484d-a00f-f0a3ddbd3f11" name="CoverageLevel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4ff588b8-61f0-431c-9a68-20829bb67f51" />
+                </property>
+                <property Id="af054d8b-d3ce-4b5c-87c0-75d225cefabf" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="958a8bce-9c0f-47e6-8fab-878a52d8d6ea" />
+                </property>
+                <property Id="960755a2-231b-4d02-98a4-355e3297e39f" name="Mnemonic" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="21a6cf43-f501-403a-a378-622803fd3965" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="42958d96-b286-4e38-be1c-ccfe46109502" name="Deductible" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6bd8852d-9a23-47f2-b0fc-38d5f424ed8b" />
+              <ownedAttributesInternal>
+                <property Id="2b7592dc-fbfb-4cc1-803d-e89d9546d53d" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7bb8f33c-414d-41ea-82a6-1f66f5dc495f" />
+                </property>
+                <property Id="adfa6a80-b8a5-41c1-bfcc-5d7baa1f6d73" name="Amount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="44f5c990-5399-4986-be55-a88a2457b3b2" />
+                </property>
+                <property Id="1e882148-69f2-460d-bb47-598c0d381d7d" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0a1edea1-7ba4-4cc7-82b3-6fe9ecc2e687" />
+                </property>
+                <property Id="141426bf-112a-462e-be1c-32c3053d1b79" name="Mnemonic" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3b829e40-7e3d-43cb-b905-3faf75a7e12f" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7fab06a4-6218-44cb-9565-ff17d1bfa271" name="Limit" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="84b0e2d3-5d09-4f05-8caa-6a2a0c3a660a" />
+              <ownedAttributesInternal>
+                <property Id="6abd4da9-d8d3-4779-9d42-fefffebd254f" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4f8aeef5-5e48-42bf-8bb8-918007f4a429" />
+                </property>
+                <property Id="aac731d7-e872-4704-8e19-3661efb45019" name="Description" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b941c55f-84e6-487b-8ed9-5d6e712beb2e" />
+                </property>
+                <property Id="6f2d0cdc-2cc6-41fa-ac2e-8fff1eec1240" name="Minimum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="19ab4a3a-2578-41d2-ad2c-ab2edd58969c" />
+                </property>
+                <property Id="0b2a4e7a-7273-445b-9e6d-0899818535a9" name="Mnemonic" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="522d65b4-f5fa-4b89-95db-4dcca89b298c" />
+                </property>
+                <property Id="be721099-6af2-4172-b100-a349441f2119" name="PerIncident" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="97b7f80f-dbe3-43f1-a697-cdfa9ba8d503" />
+                </property>
+                <property Id="40362342-a49c-452a-96d5-12c2db94299c" name="PerPerson" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f57754c-8cc0-46c8-ae65-dc50b5019382" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1b824fcb-c7cc-4335-a59f-38dce0f38cbd" name="VehicleInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="053ec356-f9ba-4ab8-823e-5af9b1a47137" />
+              <ownedAttributesInternal>
+                <property Id="b5c12fdd-8897-4c19-ab1d-1f6e1c903f44" name="VehicleId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3a64da12-ee1a-46b7-b94d-06fc0a2175e7" />
+                </property>
+                <property Id="edbca0a9-9b76-46aa-a4e7-be423d0cbf1c" name="IsLeased" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="73b1833b-3244-4d0d-a845-e77a404f7925" />
+                </property>
+                <property Id="17aaffc1-0bec-47ff-a683-c12a894bd49e" name="VehicleType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ed3e7587-afe5-490f-9d20-9b218179f5a8" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="05137c08-8376-43db-b011-d47514324e39" name="DriverInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0c4fd34e-3dec-4e7c-8cbb-7d9227262913" />
+              <ownedAttributesInternal>
+                <property Id="553facea-65fa-4423-91d4-16865752d34a" name="DuiDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3dbcce3e-d044-4b5c-a5d4-8723479d2bed" />
+                </property>
+                <property Id="17253ee8-1f2d-4acc-98af-efefe418fed7" name="HasDui" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f4cd002-923e-406b-b26b-a30a0a2ca604" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="4d0f1421-e4a7-49ce-97a5-d488a1a65747" name="Coverage" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="be550ccd-f8f5-4e23-b558-b66ea3abb633" />
+              <suppliersInternal>
+                <dependency Id="bf208de4-5761-4493-95d0-3c9db67b1f9f">
+                  <classMoniker Id="42958d96-b286-4e38-be1c-ccfe46109502" LastKnownName="Deductible" />
+                  <elementDefinition Id="5c4bdcf1-b49b-4b87-9507-fc348c82927f" />
+                </dependency>
+                <dependency Id="b0ee9a75-548f-40b2-9f64-3bac1ab6251b">
+                  <classMoniker Id="1ba8e64d-42d2-4ed6-af03-9a9ab83f40a2" LastKnownName="CoverageType" />
+                  <elementDefinition Id="5c6578f9-f455-4410-b4a1-09f9fe9c853c" />
+                </dependency>
+                <dependency Id="6b3d4478-447f-4c8f-9866-fe395f89eb38">
+                  <classMoniker Id="7fab06a4-6218-44cb-9565-ff17d1bfa271" LastKnownName="Limit" />
+                  <elementDefinition Id="fb072016-c70f-46c3-ad0a-e32732c13ba9" />
+                </dependency>
+              </suppliersInternal>
+              <ownedAttributesInternal>
+                <property Id="ebc2440b-dd0e-4c72-b812-f943d38bf472" name="CoverageType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0a043e15-7b0e-484f-92f2-78abadd5d020" />
+                </property>
+                <property Id="a84dc39b-b840-4ad3-8ea5-804565616a8a" name="Deductible" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b9f7eae9-9100-457b-a222-8a79e79e09ab" />
+                </property>
+                <property Id="8a66f5c1-a849-41f8-95bf-33ebd6c3ef4d" name="Limit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fead4a69-cc9f-4582-a315-b9487738fd2b" />
+                </property>
+                <property Id="af518ee7-bc53-45d8-adb3-9b0373863d32" name="VehicleId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7e5cb851-0d16-4312-aee3-9b858def173b" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="cca4ab7c-eaa6-4339-b6e5-706a4e079c9c" name="CoverageValidation.Model.Resource.Validation">
+        <elementDefinition Id="80527610-51c6-43e7-9d14-56ac4538c819" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="7d323cb6-8c92-4cef-b548-38a712db3cbb" name="CoverageValidationRequest" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="146fa766-8a61-4d1f-bfea-b99677977e7a" />
+              <suppliersInternal>
+                <dependency Id="865d2288-0031-441a-8604-d0a75a07510d">
+                  <classMoniker Id="7b25e095-fe96-4e56-a302-58f779447bcf" LastKnownName="BigSix" />
+                  <elementDefinition Id="20fed3cf-d992-485d-9c8a-4cfd5bd0a585" />
+                </dependency>
+              </suppliersInternal>
+              <ownedAttributesInternal>
+                <property Id="3863d624-4bd5-4c69-8241-3efafe6b9df2" name="Coverages List of Coverage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="80002cef-7fc9-4970-9aad-8d4ba893678c" />
+                </property>
+                <property Id="5020c923-8e4d-4efb-9bc5-58e0b5c50800" name="Drivers List of DriverInfo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="97bd1118-fce3-4ebb-8152-6004cf74359f" />
+                </property>
+                <property Id="d8028ef0-7356-4627-bd86-032cd01d5256" name="RiskState" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4bc680e8-0d7b-4266-bf2b-812bc348f57c" />
+                </property>
+                <property Id="321de0ff-d91e-4e2f-952e-c7ea5a7b80fe" name="Vehicles List of VehicleInfo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9e9bfe0b-7d3f-488d-8968-d41f90785208" />
+                </property>
+                <property Id="f0bf696c-c0ba-4a4b-b915-45537447e660" name="BixSix" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="03ef200f-ca78-4060-99d3-ce59de6f7df1" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="00b5a10a-46fb-4ab5-b8e4-42e198e5450e" name="CoverageRuleContainer" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="95bf7947-503c-44e0-ae62-e807a32bf220" />
+              <suppliersInternal>
+                <dependency Id="ffa7b0c5-5b3e-4e6a-85de-08fce550adad">
+                  <classMoniker Id="7d323cb6-8c92-4cef-b548-38a712db3cbb" LastKnownName="CoverageValidationRequest" />
+                  <elementDefinition Id="c8cd94bf-4a03-4f9a-834d-1d579eff3ea1" />
+                </dependency>
+                <dependency Id="78182d5e-af25-4645-991f-a7801ff827c8">
+                  <classMoniker Id="c566c05e-cdf1-4da3-a6a1-d710a089ddb7" LastKnownName="CoverageValidationResponse" />
+                  <elementDefinition Id="5443efac-ab41-4619-9036-1dbbcf40bf47" />
+                </dependency>
+              </suppliersInternal>
+              <ownedAttributesInternal>
+                <property Id="2e80904c-c921-4e1a-be5b-ca63f8f9527b" name="Request" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b454d8d5-6868-4572-95eb-d46fcbcdf047" />
+                </property>
+                <property Id="de86dddc-cc6d-4836-b24f-581a96c79793" name="Response" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b26f7a2d-e164-4355-90cd-1aac935cea14" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c566c05e-cdf1-4da3-a6a1-d710a089ddb7" name="CoverageValidationResponse" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fa5ba359-a4d3-4369-90f8-3bbc59807ed0" />
+              <ownedAttributesInternal>
+                <property Id="c5659c56-3bdf-438c-b4a0-04749029f133" name="Messages" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a5ba7a03-3a5d-487b-9f97-c75b78f857cf" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="73eabbbe-c972-4644-a483-5bd4e5be11f9" name="VehicleCoverageRequest" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9e5edeab-ccfc-4ab4-9e5c-fe9ba7408c13" />
+              <ownedAttributesInternal>
+                <property Id="b59ff3cd-2eb8-4706-8c63-5fa65598b997" name="Coverages" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bd5839d1-1d20-42d5-8281-692ac74e1bbb" />
+                </property>
+                <property Id="ba03e49c-240d-491d-854b-ced531fb8144" name="Drivers" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4d67170a-6ac4-41c8-a7d0-66648fc9e429" />
+                </property>
+                <property Id="4aba01c2-aadc-4eaa-86a5-fe7a43929fdd" name="Vehicle" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1b1c4a01-6179-4937-8fbf-e97bbc44162f" />
+                </property>
+                <property Id="6e0a6324-34dc-4a47-9ccc-3e94a13c5af2" name="RiskState" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="70e5509b-91ce-4139-8c25-a075a2183a0e" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f921faaf-e09b-426b-9753-dcf64d8c815b" name="VehicleCoverageResponse" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="7ec4d053-6530-49cd-af88-a809e197be45" />
+              <ownedAttributesInternal>
+                <property Id="5047eaee-6a91-4486-9d6c-4a5148ac03fa" name="Messages" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="df6ee7b0-4114-4f74-a7ad-259b373ef9b0" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3737fc38-dc60-436d-ba6d-61c0e16c65b1" name="VehicleCoverageRuleContainer" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0bca778c-0c76-4236-90a0-ba5dedc029c9" />
+              <suppliersInternal>
+                <dependency Id="bd055795-4bfc-435b-8b53-42a0a8bcc0e1">
+                  <classMoniker Id="73eabbbe-c972-4644-a483-5bd4e5be11f9" LastKnownName="VehicleCoverageRequest" />
+                  <elementDefinition Id="10f2e167-7cba-44ca-b7d5-76c48cd2d3d3" />
+                </dependency>
+                <dependency Id="4bbb15e7-92d0-4867-b93f-23511c1bdd47">
+                  <classMoniker Id="f921faaf-e09b-426b-9753-dcf64d8c815b" LastKnownName="VehicleCoverageResponse" />
+                  <elementDefinition Id="1eb1c301-3330-42e4-9bd2-316bfd035bec" />
+                </dependency>
+              </suppliersInternal>
+              <ownedAttributesInternal>
+                <property Id="c625326c-9fa6-4ae5-8284-8ac514e74296" name="Request" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7cc0f974-38a1-4c06-9898-d9063e2a56a5" />
+                </property>
+                <property Id="1f148643-9635-4bec-8f6b-1a41238abc42" name="Response" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="be88d5ea-582a-4d26-ad83-b1389c60ee56" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7b25e095-fe96-4e56-a302-58f779447bcf" name="BigSix" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="02acf370-c47e-4c04-8efe-c3a3bf6114a9" />
+              <ownedAttributesInternal>
+                <property Id="e7d1d22c-ccd0-486f-8bd0-f3760cd76f51" name="UnlimitedCompany" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a37e18ee-0732-4d33-973e-bac623211007" />
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="3c49e8ba-729d-468c-8166-e95ef3bd246d" name="CoverageValidation.Design">
+    <elementDefinition Id="b02a7e6c-58be-4c35-b7a7-da85ffd47209" />
+    <profileInstances>
+      <packageHasProfileInstances Id="dd3faa50-92a7-42a7-b1a0-faa7b2f381cf">
+        <profileInstance Id="5fe8ed71-7e19-4ad2-829e-a9c5f07d4ea4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8f48edce-2bd6-4cc7-bbaf-54dbfdb58716">
+        <profileInstance Id="fa083bf0-fded-4c2f-a2f0-b51fd75995b0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dde58073-1193-4f3e-bd5f-e0f55ddbade0">
+        <profileInstance Id="c5641864-08c0-4256-a3f9-ed8ec239f8ff" name="CSharpProfile">
+          <elementDefinition Id="3e3b91b7-e5f8-4b59-84eb-9e480d579e94" />
+        </profileInstance>
+        <elementDefinition Id="d1c0104e-3855-4189-b47c-45dd9e9ecfdb" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

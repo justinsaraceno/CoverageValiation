@@ -6,8 +6,9 @@ namespace CoverageValidation.Model.Resource.Validation
     {
         public List<Coverage> Coverages { get; set; }
         public List<DriverInfo> Drivers { get; set; }
-        public VehicleInfo Vehicles { get; set; }
+        public VehicleInfo Vehicle { get; set; }
         public string RiskState { get; set; }
+        public CoverageValidationRequest Parent { get; set; }
 
     }
 }

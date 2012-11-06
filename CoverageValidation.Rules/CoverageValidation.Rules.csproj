@@ -49,14 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Coverage\Rules\VehicleLevel\VehicleRuleSet.cs" />
+    <Compile Include="Coverage\CoverageValidationMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoverageValidationMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Coverage\RuleManager.cs" />
+    <Compile Include="Coverage\Rules\VehicleLevel\Coverage004InLine.cs" />
+    <Compile Include="Coverage\Rules\VehicleLevel\Coverage003InLine.cs" />
+    <Compile Include="Coverage\Rules\VehicleLevel\Coverage002InLine.cs" />
+    <Compile Include="Coverage\VehicleRuleSet.cs" />
     <Compile Include="Coverage\Rules\VehicleLevel\Coverage001InLine.cs" />
-    <Compile Include="Coverage\Rules\VehicleLevel\Coverage005.cs" />
-    <Compile Include="Coverage\Rules\VehicleLevel\Coverage004.cs" />
-    <Compile Include="Coverage\Rules\VehicleLevel\Coverage003.cs" />
-    <Compile Include="Coverage\Rules\VehicleLevel\Coverage0021.cs" />
-    <Compile Include="Coverage\Rules\VehicleLevel\Coverage002.cs" />
-    <Compile Include="Coverage\Rules\VehicleLevel\Coverage001.cs" />
     <Compile Include="Coverage\Rules\Foundation\Comparisons\AnyAreCarried.cs" />
     <Compile Include="Coverage\Rules\Foundation\Comparisons\BaseTypes\CompareTwoCoveragesBase.cs" />
     <Compile Include="Coverage\Rules\Foundation\Comparisons\BaseTypes\CompareCoverageToListBase.cs" />
@@ -69,7 +72,6 @@
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\TwoCoverageRuleBase.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\VehicleRuleBase.cs" />
     <Compile Include="Coverage\Rules\Foundation\BaseTypes\CoverageRuleBase.cs" />
-    <Compile Include="Coverage\Rules\PolicyLevel.cs" />
     <Compile Include="Coverage\Rules\PolicyLevel\VehicleRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Coverage\CoverageRuleSet.cs" />
@@ -87,6 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Coverage\CoverageValidationMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CoverageValidationMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
