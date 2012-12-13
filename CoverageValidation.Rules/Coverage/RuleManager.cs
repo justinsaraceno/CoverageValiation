@@ -28,7 +28,10 @@ namespace CoverageValidation.Rules.Coverage
 
           foreach (var vehicle in fact.Request.Vehicles)
           {
+              //Get the coverages for this vehicle
               var coverages = fact.Request.Coverages.Where(c => c.VehicleId == vehicle.Id).ToList();
+              
+              //Add the vehicle and the coverages to the dictionary
               coveragesByVehicle.Add(vehicle, coverages);
           }
 
@@ -42,7 +45,8 @@ namespace CoverageValidation.Rules.Coverage
                   Coverages = item.Value,
                   Drivers = fact.Request.Drivers,
                   RiskState = fact.Request.RiskState,
-                  Vehicle = item.Key
+                  Vehicle = item.Key,
+                  Parent = fact.Request
               };
 
               var response = new VehicleCoverageResponse();

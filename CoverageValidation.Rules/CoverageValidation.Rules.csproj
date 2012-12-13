@@ -32,10 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Geico.Applications.Foundation.Rules">
-      <HintPath>..\..\..\..\..\..\..\TFS\MSI\Dev\vNext\Applications\Foundation\Rules\src\Rules\bin\Debug\Geico.Applications.Foundation.Rules.dll</HintPath>
+      <HintPath>..\packages\Applications.Foundation.BusinessRules.1.1.15-Beta\lib\net40\Geico.Applications.Foundation.Rules.dll</HintPath>
     </Reference>
     <Reference Include="StructureMap">
-      <HintPath>..\packages\structuremap.2.6.3\lib\StructureMap.dll</HintPath>
+      <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -88,13 +88,13 @@
     <Folder Include="Coverage\Rules\Repositories\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Coverage\CoverageValidationMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CoverageValidationMessages.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

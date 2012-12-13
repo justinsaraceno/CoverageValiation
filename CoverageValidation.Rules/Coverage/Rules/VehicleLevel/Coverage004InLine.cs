@@ -39,6 +39,7 @@ namespace CoverageValidation.Rules.Coverage.Rules
             //determine if the result
             var coverageMet = (!IsCarried(coveragePD) && !IsCarried(coverageBI));
 
+            return coverageMet;
 
 
 

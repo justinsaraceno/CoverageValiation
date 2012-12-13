@@ -10,9 +10,6 @@ namespace CoverageValidation.Rules.Coverage
         public CoverageVehicleRuleSet()
         {
             AddRule<Coverage001InLine>();
-
-
         }
-
     }
 }

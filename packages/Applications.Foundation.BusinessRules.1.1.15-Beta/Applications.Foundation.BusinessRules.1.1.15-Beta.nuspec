@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Applications.Foundation.BusinessRules</id>
+    <version>1.1.15-Beta</version>
+    <authors>MSI CNB Development Team</authors>
+    <owners>MSI CNB Development Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides core rule framework assemblies</description>
+    <dependencies>
+      <dependency id="structuremap" version="2.6.3" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Workflow.Activities" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Workflow.ComponentModel" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Workflow.Runtime" targetFramework=".NETFramework4.0" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

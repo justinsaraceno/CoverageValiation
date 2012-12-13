@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageValidation.Rules", 
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "CoverageValidation.Design", "CoverageValidation.Design\CoverageValidation.Design.modelproj", "{593727D2-FBEC-4BAF-B827-029DABCF16E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverageValidation.Web", "CoverageValidation.Web\CoverageValidation.Web.csproj", "{94806184-6434-406C-A8D4-271D6C530AD5}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CoverageValiation.vsmdi
@@ -41,6 +43,10 @@ Global
 		{593727D2-FBEC-4BAF-B827-029DABCF16E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{593727D2-FBEC-4BAF-B827-029DABCF16E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{593727D2-FBEC-4BAF-B827-029DABCF16E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94806184-6434-406C-A8D4-271D6C530AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94806184-6434-406C-A8D4-271D6C530AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94806184-6434-406C-A8D4-271D6C530AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94806184-6434-406C-A8D4-271D6C530AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
